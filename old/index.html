@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="keywords" content="旅游相册,zhoushoujian,个人网站,周守俭，旅游空间，周守俭的博客，周守俭是谁" />
+<meta name="description" content="周守俭的空间，欢迎您的光临！因为本网站空间为旅游性质，所以需要堆放大量的图片，为了提高视觉审美体验，图片展示为大图，最好是全屏的，所以本网站好多网页采用了轻量级响应式网页设计；而主页则放置本人设计的作品，以网友欣赏，所以主页没有放置很多旅游时拍的相册和照片，但是通过主页的导航条可以直达旅游相册，无论概览还是旅游的目的地。" />
+<title>周守俭的旅游相册空间</title>
+<link rel="shortcut icon" href="images/favicon.ico"> 
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<link rel="stylesheet" href="css/baguettebox.min.css">
+<script src="http://libs.baidu.com/jquery/1.2.3/jquery.min.js"></script>
+
+<style type="text/css">
+.alert{
+  display:none;
+  color: red;
+  background-color: #ccc;
+  border-color: #ebccd1;
+  font-size:1.2em;
+  line-height:16px;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}	
+.alert a{
+	 color: green; 
+	 text-decoration: underline;  
+}	
+.close{
+	display:inline-block;
+	float:right;
+}
+</style> 
+
+
+</head>
+
+<body>
+    <!--如果是ie8及以下浏览器打开此页面，则自动显示下面这个提示-->
+	<div class="alert" id="alert">  
+    您好！我们检测到您使用的浏览器版本有点低，为了获得更好的浏览体验，强烈建议升级您的浏览器！&nbsp;&nbsp;&nbsp;<a href="http://down.360safe.com/cse/360cse_8.7.0.306.exe" class="alert-link">请下载最新版本！</a>
+    <button class="close" onclick="document.getElementById('alert').style.display = 'none'"><span>&times;</span></button>
+   </div>
+   <!-- 自动检测用户浏览器是否为ie8-->
+   <!--[if lte IE 8]>
+<script>
+		document.getElementById('alert').style.display = 'block';
+</script>
+<![endif]-->
+<!--table布局，首页logo和导航栏部分-->
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">  
+  <tr>
+    <td height="148" background="images/index_03.gif" alt="个人网站">&nbsp;</td> 
+  </tr>
+  <tr>
+    <td class="logo">
+    <span>&nbsp;&nbsp;周守俭的旅游相册空间</span>
+	<span id="navMenu">   <!--导航右悬浮-->
+       <ul id="nav">
+               <li><a href='../xiangce/jiaxiang/index.html' target="_blank">我的家乡</a></li>
+                <li><a href='../xiangce/xuexiao/sanjiang1.html' target="_blank">我的学校</a>
+                    <ul class="subs"> 
+                         <li><a href="../xiangce/xuexiao/sanjiang2.html" target="_blank">创意版</a></li>
+                         <li><a href="../xiangce/xuexiao/sanjiang3.html" target="_blank">HTML5版</a></li>
+                    </ul>
+                </li>
+                <li><a href='../xiangce/nanjing/index.html' target="_blank">南京游</a>
+                    <ul class="subs">
+                        <li><a href="../xiangce/nanjingxiangce/qixiashan/index.html" target="_blank">栖霞山</a></li>
+                        <li><a href="../xiangce/nanjingxiangce/xuanwuhu/index.html" target="_blank">玄武湖</a></li>
+                        <li><a href="../xiangce/nanjingxiangce/dongwuyuan/index.html" target="_blank">红山动物园</a></li>
+                        <li><a href="../xiangce/nanjingxiangce/3Dhuazhan/index.html" target="_blank">3D画展</a></li>
+                        <li><a href="../xiangce/nanjingxiangce/zhenzhuquan/index.html" target="_blank">珍珠泉</a></li>
+	                    <li><a href="../xiangce/nanjingxiangce/yuhuatai/index.html" target="_blank">雨花台公园</a></li>
+                        <li><a href="../xiangce/nanjingxiangce/yuejianglou/index.html" target="_blank">阅江楼</a></li>
+                        <li><a href="../xiangce/nanjingxiangce/fuzimiao/index.html" target="_blank">夫子庙</a></li>
+                        <li><a href="../xiangce/nanjingxiangce/zhongshanling/index.html" target="_blank">中山陵</a></li>
+                        <li><a href="../xiangce/nanjingxiangce/zongtongfu/index.html" target="_blank">总统府</a></li>
+                    </ul>
+                </li>
+               <li><a href='../xiangce/shengnei/index.html' target="_blank">省内游</a>
+                    <ul class="subs">
+                         <li><a href="../xiangce/shengneixiangce/suzhou/index.html" target="_blank">苏州</a></li>
+                         <li><a href="../xiangce/shengneixiangce/wuxi/index.html" target="_blank">无锡</a></li>
+                         <li><a href="../xiangce/shengneixiangce/yangzhou/index.html" target="_blank">扬州</a></li>
+                         <li><a href="../xiangce/shengneixiangce/zhenjiang/index.html" target="_blank">镇江</a></li>
+                         <li><a href="../xiangce/shengneixiangce/changzhou/index.html" target="_blank">常州</a></li>
+                         <li><a href="../xiangce/shengneixiangce/lianyungang/index.html" target="_blank">连云港</a></li>
+                         <li><a href="../xiangce/shengneixiangce/xuzhou/index.html" target="_blank">徐州</a></li>
+                    </ul>
+                </li>
+             <li><a href='../xiangce/shengwai/index.html' target="_blank">省外游</a>
+                    <ul class="subs">
+                            <li><a href="../xiangce/shengwaixiangce/xihu/index.html" target="_blank">西湖</a></li>
+                            <li><a href="../xiangce/shengwaixiangce/shanghai/index.html" target="_blank">上海</a></li>
+                            <li><a href="../xiangce/shengwaixiangce/taishan/index.html" target="_blank">泰山</a></li>
+                            <li><a href="../xiangce/shengwaixiangce/qingdao/index.html" target="_blank">青岛</a></li>
+                         	<li><a href="../xiangce/shengwaixiangce/huangshan/index.html" target="_blank">黄山</a></li>
+                            <li><a href="../xiangce/shengwaixiangce/zaozhuang/index.html" target="_blank">枣庄</a></li>
+                            <li><a href="../xiangce/shengwaixiangce/xitang/index.html" target="_blank">西塘</a></li>
+                            <li><a href="../xiangce/shengwaixiangce/caishiji/index.html" target="_blank">采石矶</a></li>
+	                        <li><a href="../xiangce/shengwaixiangce/wuhan/index.html" target="_blank">武汉</a></li>
+	                        <li><a href="../xiangce/shengwaixiangce/zhangjiajie/index.html" target="_blank">张家界</a></li>
+                    </ul>
+                </li>
+              <li><a href='../daxue/index.html' target="_blank">大学回忆录</a>
+                    <ul class="subs">
+                       <li><a href="../daxue/huiyilu.html" target="_blank">大学生涯总结</a></li>
+                       <li><a href="../daxue/naxieshi.html" target="_blank">大学必做之事</a></li>
+                       <li><a href="../daxue/shunjian.html" target="_blank">大学难忘的瞬间</a></li>
+                       <li><a href="../daxue/dianliang.html" target="_blank">旅游报告</a></li>
+	                   <li><a href="../daxue/zuopin.html" target="_blank">我的作品集</a></li>
+	                   <li><a href="../daxue/young.html" target="_blank">青春的映画</a></li>
+	                   <li><a href="../daxue/school.html" target="_blank">学校依旧那么美</a></li>
+                    </ul>
+                </li> 
+            </ul>
+   </span>
+</td>
+</tr>
+</table>
+
+<table align="center" cellpadding="0" cellspacing="0" class="content">
+  <tr>
+    <td>
+    <table cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="tip">网站公告</td>
+             <td class="intro" id="intro">   <!--利用js动态改变幻灯片上面的文字标题-->
+              <a href="http://www.zhoushoujian.com/xiangce/jiaxiang/index.html" target="_blank">1.家乡大伊山</a>
+             </td>
+           </tr>
+            <tr>
+             <td class="tips">   <!--网站公告消息显示-->
+             <marquee direction="up" scrollamount="1" onmouseover="this.stop()" onmouseout="this.start()" height="160">
+             <table width="220" border="0" align="center" >
+              <tr>
+               <td align="center">
+               <font color="#FFFFfF">    
+            &nbsp &nbsp 搭建这个网站全因当初的一个想法：开设淘宝网店，然后建网站互开链接。
+			这个想法我坚持了将近两个月，而这也将是我最后一个纯兴趣开发的项目了。
+			搭建这个网站非常不容易，因为我专业不是学计算机的，
+			而且对网页类的语言了解不是很多，很多时候都是刚想到一个好的创意就去网上查资料，现学现用。
+			有时候会发现明明代码是正确的，却运行不出来；
+			有时候在嵌套css布局的时候，css之间会发生冲突；
+			有时候在编写html是会发生语法错误。。。。。。
+			期间难处，非亲历不可体其万一。
+			因为要在审美和技术上跟得上时代（毕竟已经是第三次改版了），
+			所以必须要把网页做得漂亮，把图片布局及展示效果要恰当，
+			JavaScript该有的要有，不能简简单单的摆几张图，弄几坨字。
+			在网页相册里部分的采用了响应式轻量级网页，保证了在不同设备上都能很好的显示。
+			图一定要大，所以旅行相册的主页图都是全屏的，大图才漂亮！
+			因为本空间的性质为旅游相册空间，是要放很多图片的，但是为了美观，
+			主页只要放上旅游相册的链接即可，其他的地方布置我的作品，这样才更像是个人空间，
+			而且能起到展示自己的效果。网站是做完了，接下来还要测试浏览器，
+			并不是所有浏览器对网页显示的效果都非常好，
+			尤其是添加了很多特效的网页：嵌套布局和特效容易发生冲突，
+			不同浏览器显示的效果不一样。
+			经过大量测试，我发现常用的浏览器如谷歌和uc浏览器对我的网站支持效果非常好，
+			几乎能完全显示网页本有的效果。
+			因为本站代码采用了很多较新的技术，
+			所以对像IE6这样的旧版本的浏览器支持不是很好，
+			而响应式的网页是不支持IE6，建议大家使用高版本的IE，
+			或者用谷歌浏览器 
+			   ————周守俭
+			  </font>                
+			  </td>
+              </tr>
+            </table>
+            </marquee>     
+	  </td>
+      <td class="pics" id="pics" >
+        <ul>  <!-- 显示右下角的小框框-->
+       <li class="active"></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+        </ul>
+      <a href="http://www.zhoushoujian.com/xiangce/jiaxiang/index.html" target="_blank" id="links">  <!--利用js动态改变幻灯片的超链接-->
+       <img src="shouye/a.jpg" >   <!--幻灯片图片-->
+       <img src="shouye/b.jpg">
+       <img src="shouye/c.jpg" >
+       <img src="shouye/d.jpg" >
+       <img src="shouye/e.jpg" >
+        </a>
+
+      </td>
+          </tr>
+        </table>   
+		</td> 
+      </tr>
+
+      <tr>
+        <td height="37" background="images/index_12-15.jpg" alt="旅游空间">   <!--视频作品的背景图片-->
+		<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>我的视频作品两部曲</td>
+          </tr>
+          </table>    
+        </td>
+      </tr>   
+                 <tr>
+                 <td>
+                 <table border="0" cellSpacing="0" cellPadding="0" width="947" align="center">  
+                 <tr>
+                 <td  width="480"><embed src="http://player.youku.com/player.php/sid/XMTI2NDY2NjA0NA==/v.swf" allowFullScreen="true" quality="high" width="480" height="272" align="middle" wmode="Opaque" allowScriptAccess="always" type="application/x-shockwave-flash"></embed></TD>            
+                 <td  width="480"><embed src="http://player.youku.com/player.php/sid/XMTI2NTk4NjAxNg==/v.swf" allowFullScreen="true" quality="high" width="480" height="272" align="middle" wmode="Opaque" allowScriptAccess="always" type="application/x-shockwave-flash"></embed></TD>
+                 </tr>
+                 </table>              
+			     </td>
+                 </tr>
+
+
+<!--调用分享api-->
+ <script>
+ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"5","bdPos":"right","bdTop":"216.5"},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+ </script>  
+  
+<!--调用联系我api（qq和旺旺） -->  
+<tr>
+ <td> 
+    <DIV id=STATICMENU style="Z-INDEX: 999; FILTER: alpha(opacity=90); left: 0px; VISIBILITY: visible; WIDTH: 100px; POSITION: fixed; TOP: 250px;">
+      <table width="106" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td colspan="3" > <img data-cke-saved-src="http://www2.cpooo.com/images/share/qq2/qq_top.gif" src="http://www2.cpooo.com/images/share/qq2/qq_top.gif" width="109" height="34" border="0" usemap="#MapForQQ"> </td>
+       </tr> 
+        <tr> 
+         <td width="6" background="http://www2.cpooo.com/images/share/qq2/qq_life.gif" ></td> 
+          <td width="96" align="center" bgcolor="#FFFFFF">
+           <TABLE cellSpacing=0 cellPadding=0 width=90 align=center border=0> 
+           <TBODY>
+            <TR> 
+             <TD height="39" align="center">   
+			 
+			 <br>
+			 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=863165094&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:863165094:41" alt="周守俭" title="我在线上"/></a> <!-- qq在线-->
+			 <br><br>
+			<a target="_blank" data-cke-saved-href="http://web.im.alisoft.com/msg.aw?v=2&uid=zy13815612576&site=cnalichn&s=10" href="http://web.im.alisoft.com/msg.aw?v=2&uid=周守俭&site=cnalichn&s=10" >   <!--旺旺在线-->
+			<img border="0" src="http://amos.alicdn.com/realonline.aw?v=2&uid=%E5%A4%A7%E5%B1%95%E5%85%89%E7%94%B5%E7%A7%91%E6%8A%80&site=cntaobao&s=1&charset=utf-8" alt="周守俭" title="我在线上"/></a>
+ </TD> 
+			 </TR>
+			  </TBODY>
+			   </TABLE>
+			   </td> 
+<td width="7" background="http://www2.cpooo.com/images/share/qq2/qq_right.gif"> </td>
+ </tr> 
+ <tr> 
+<td colspan="3"> <img data-cke-saved-src="http://www2.cpooo.com/images/share/qq2/qq_logo.gif" src="http://www2.cpooo.com/images/share/qq2/qq_logo.gif" width="110" height="17"> </td> 
+</tr> 
+</table> 
+ </DIV> 
+ </td>
+ </tr> 
+ 
+      <tr>
+        <td height="40" background="images/index_12-15.jpg" alt="旅游空间">
+		 <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>我的图片作品</td>
+          </tr>
+         </table>
+		</td>
+      </tr>
+  
+      <table border="0" cellSpacing="0" cellPadding="0" align="center" width="1000">
+			
+			   <div class="baguetteBoxOne gallery">  <!--baguettebox库-->
+             
+                  <a href="shouye/1.jpg" style="display:inline-block;margin:10px 0 0 78px;"><IMG alt="旅游相册" title="电动汽车电路原理图" src="shouye/small/1.jpg"></a>
+                  <a href="shouye/2.jpg" style="display:inline-block;margin:10px 0 0 25px"><IMG alt="旅游相册" title="电动汽车车身电线束" src="shouye/small/2.jpg"></a>
+                  <a href="shouye/3.jpg" style="display:inline-block;margin:10px 0 0 25px;"> <IMG alt="zhoushoujian" title="电动汽车底盘电线束" src="shouye/small/3.jpg"></a>
+                  <a href="shouye/4.jpg" style="display:inline-block;margin:10px 0 20px 25px;"> <IMG alt="旅游相册" title="二级减速器" src="shouye/small/4.jpg"></a>
+
+                  <a href="shouye/5.jpg" style="display:inline-block;margin:10px 0 0 78px;"><IMG alt="旅游相册" title="家的印象初稿"src="shouye/small/5.jpg"></a>
+                  <a href="shouye/6.jpg" style="display:inline-block;margin:10px 0 0 25px;"> <img alt="旅游相册" title="3D画展" src="shouye/small/6.jpg"></a>
+                  <a href="shouye/7.jpg" style="display:inline-block;margin:10px 0 0 25px;"> <IMG alt="旅游相册" title="张家界天子山"src="shouye/small/7.jpg"></a>
+                  <a href="shouye/8.jpg" style="display:inline-block;margin:10px 0 20px 25px;"><IMG alt="旅游相册" title="家的印象（3DS max作品）"src="shouye/small/8.jpg"></a>
+
+                  <a href="shouye/9.jpg" style="display:inline-block;margin:10px 0 0 78px;"><IMG alt="zhoushoujian" title="轮胎之线条美" src="shouye/small/9.jpg"></a>
+                  <a href="shouye/10.jpg" style="display:inline-block;margin:10px 0 0 25px;"><IMG alt="zhoushoujian" title="宿舍的一角" src="shouye/small/10.jpg"></a>
+                  <a href="shouye/11.jpg" style="display:inline-block;margin:10px 0 0 25px;"><IMG alt="zhoushoujian" title="宿舍俯视图（3DS max作品）"src="shouye/small/11.jpg"></A> 
+                  <a href="shouye/12.jpg" style="display:inline-block;margin:10px 0 10px 25px;"><IMG alt="zhoushoujian" title="轮胎"src="shouye/small/12.jpg"></a>
+                 
+			   </div>	
+      </table> 
+</table>
+
+<table class="footer" align="center">
+     <tr>
+        <td width="1000" height="100" align="center" >
+        <p>友情链接：<a href="http://www.zhoushoujian.com" target="_blank" tittle="ie8及以下浏览器无法打开">新版首页</a>
+		  |
+		  <a href="http://blog.zhoushoujian.com" target="_blank">我的博客</a> 
+          |
+		  <a href="http://dh.zhoushoujian.com" target="_blank">快捷网址导航</a> 
+          |
+		  <a href="http://www.zhoushoujian.pw" target="_blank">美女写真网</a>       
+		  |
+		  <a href="http://www.zhoushoujian.top" target="_blank">创慧博才教育</a>       
+		  |
+		  <a href="http://www.dzzm.cn" target="_blank">大展光电科技</a> |
+        <br>  <br>
+          copyright &copy 2016 <a href="http://www.miitbeian.gov.cn/">苏ICP备 16005979 号 </a>  All rights reserved.版权所有	
+        </p>
+       </td>
+      </tr>
+    </table>
+
+<script src="js/huandeng.js"></script>
+<script src="js/baguettebox.min.js"></script>
+<script>
+baguetteBox.run('.baguetteBoxOne', {
+    animation: 'fadeIn',
+});
+</script>
+
+</body>
+</html>

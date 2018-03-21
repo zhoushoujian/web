@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px;
+	padding:0px;
+	background:url(../images/index_01.jpg);
+	color:#FFFFFF;
+	font-size:12px;
+	font-weight: bold;
+	font-family: "宋体";
+	font-style: normal;
+	width;1000px;
+}
+ul,li{
+	padding:0px;
+	margin:0px;
+	list-style-type: none;
+}
+td,tr{
+	cellpadding:0; 
+	 cellspacing:0;
+	}
+* a{
+	text-decoration: none;
+	color:#FFFF00;
+}
+a:hover{
+	color:#FFFFFF;
+}
+.logo{
+	width:1000px;
+	height:50px;
+	background-color:#222222;
+	border:5px #000 solid;
+	}
+.logo span{
+	color:#fff;
+	font-size:20px;
+	margin-left:5px;
+	height:50px;
+	line-height:50px;
+	float:left;
+	}
+/*^_^^_^^_^^_^^_^^_^^_^^_^^_^^_^^_^^_^^_^^_^^_^^_^^_^^_^^_^^_^^_^^_^^_^^_^*/ 
+
+/*导航菜单*/
+#navMenu {
+	width:650px;
+	display:inline-block;
+	background-image: #000000;
+	float: right;
+	height: 50px;
+	line-height: 28px;
+}
+#nav,#nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#nav {
+    background: #000;
+	border-radius:5px;
+	padding:0 10px;
+    clear: both;
+    font-size: 12px;
+    height: 58px;
+    position: relative;
+    width: 635px;
+}
+#nav ul {
+    background-color: #222;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5); /* 水平位移，垂直位移，模糊半径，阴影颜色*/
+    position: absolute;
+    z-index: 2;
+    display:none;
+}
+#nav li {
+    float: left;           /*   使导航菜单在同一行*/
+    position: relative;    /*下拉菜单相对定位，否则会跑到左边去*/
+	margin-top:-5px;
+}
+#nav li a {
+    color: #FFFFFF;
+    display: block;
+    font-weight: normal;
+    height: 30px;          /*每个li所在行的高度*/
+    padding: 23px 20px 0px 20px;  /*导航文字的定位,二级导航的显示与其息息相关*/
+    text-decoration: none;
+
+}
+#nav li:hover > a {
+    color: #00B4FF;   /*导航文字的悬浮颜色*/
+}
+#nav li:hover, #nav a:focus, #nav a:hover, #nav a:active {
+    background:#121212;  /*导航条悬浮的背景颜色，形成色差*/
+
+}
+#nav li:hover ul.subs {
+    left: 0;
+    top: 53px;  /*下拉菜单离导航的距离*/
+    width: 160px;   /*下拉菜单的宽度*/
+    display:block;
+}
+#nav ul li {
+    width: 100%;     /*一行只显示一个下拉菜单*/
+}
+
+#nav ul li:hover > a {
+    background-color: #121212;
+    color: #00B4FF;
+}
+a:link,a:visited,a:active{color:#999999;text-decoration:none;}
+a:hover{color:#FFFFFF;}
+.content{
+	 box-shadow:3px 3px 3px #222;
+	 width:1000px;
+	 border-top:5px #000 solid; 
+	 border-left:5px #000 solid; 
+	 border-right:5px #000 solid; 
+	 cellpadding:0; 
+	 cellspacing:0;
+	 }
+.tip{
+	 width:260px;
+	 height:30px;
+	 background-color:#000;
+	 text-align:center;
+	}
+.intro{
+	width:720px;
+	height:30px;
+	line-height:30px;
+	overflow:hidden;
+	background-color:#F96;
+	text-align:center;
+	}
+
+.tips{
+	height:160px;
+	width:260px;
+	border-left:5px #000 solid;
+	border-right:5px #000 solid;
+	border-bottom:5px #000 solid;
+	box-shadow:3px 3px 3px #222;
+	}
+.pics{
+	overflow:hidden;
+	width:720px;
+	height:162px; 
+	position:relative;
+	float:left;
+	}
+.pics ul{
+	position:absolute;
+	list-style:none;
+	top:145px;
+	left:600px;
+	overflow:hidden;
+	}
+.pics ul li{
+	width:10px;
+	height:10px;
+	border:2px #fff solid;
+	box-shadow:3px 3px 3px #222;
+	float:left;
+	margin:2px;
+	}
+.pics ul .active{
+	background:#eee;
+	}
+.gallery{
+	width:990px;
+	margin:0 auto;
+	border:5px #000 solid;
+	box-shadow:3px 3px 3px #222;
+	}	
+.gallery img {
+	border:1px solid #ffe;
+	box-shadow:0 0 2px 2px #ffe;
+	}
+.gallery img:hover{
+	box-shadow:0 0 10px 2px #ffe;
+	transition:0.3s all ease;
+	}
+.footer{
+	width:1000px;
+	border-left:5px #000 solid;
+	border-right:5px #000 solid;
+	box-shadow:3px 3px 3px #222;
+	}

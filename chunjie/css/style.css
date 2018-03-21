@@ -1,0 +1,286 @@
+@charset "utf-8";
+@import url(http//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+/* CSS Document */
+*{
+	margin:0px;
+	border:0px;
+	padding:0px;
+	font-family:'PT Sans', sans-serif;
+	-webkit-text-size-adjust:none;
+}
+body{
+	background-image:url(../images/background/bg.png);
+	background-repeat:repeat;
+	padding-left:12px;
+	padding-right:13px;
+	overflow:hidden;
+	text-align:center;
+}
+@media screen and (min-width: 720px){
+	.no-mobile{
+		display:block;
+		text-align:center;
+	    font-size:24px;
+	    width:500px;
+	    margin:auto;
+	    font-size:'PT Sans', sans-serif;
+	    padding-top:150px;
+	    line-height:40px;
+		}
+	#typing{display:none;}
+    #sites{display:none;}
+	#home{display:none;}
+	.navigation{display:none;}
+}
+@media screen and (max-width: 719px){
+.no-mobile{display:none;}
+#home{display:block;}
+#typing{display:none;}
+#sites{display:none;}
+.center-text{
+	padding-top:150px;
+	text-align:center;
+}
+.navigation{
+	background-image:url(../images/nav/nav-bg.png);
+	background-repeat:repeat-x;
+	height:49px;
+	display:block;
+	margin-left:-14px;
+	width:170%;   /*此处将宽度设为170%，下面就应该讲将后代的a标签宽度设为20%*/
+	bottom:0px;
+	position:fixed!important;
+	z-index:9999;
+}
+.clear{
+	clear:both;
+}
+.header-deco{
+	background-image:url(../images/header-deco.png);
+	background-repeat:repeat-x;
+	height:7px; 
+	margin-left:-10px;
+	padding-right:10px;
+	width:102%;
+	margin-top:-3px;
+}
+.navigation a{
+	width:20%;
+	float:left;
+	color:#696969;
+	text-decoration:none;
+	text-align:center;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+.under-icon-text{
+	margin-top:-5px;
+	font-family:'PT-Sans', sans-serif;
+	display:block;
+	font-size:10px;
+	font-style:normal;
+	color: #FFFFFF;
+}
+
+.selected{
+	background-color:rgba(255,255,255,0.1);
+}
+#allmap{
+	width: 100%;
+	height:300px;
+	position: absolute;
+    margin-left:-12px;
+}
+.copy{
+	font-size:14px;
+	text-align:center;
+	padding-bottom:10px;
+	padding-top:20px;
+	color:#FF0000!important;
+	margin-top:300px;
+}
+#divTyping{
+	 -webkit-overflow-scrolling: touch;
+	  border: 1px dashed black; 
+	  background: #fff; 
+	  color: #f00;
+	  width:220px; 
+	  height:200px; 
+	  margin:20px auto 10px auto; 
+	  overflow-y: scroll;
+	  font-size:0.8em;
+	  text-align:left;
+}
+.top{
+margin:0 auto;
+width:60%;
+height:40px;
+background-color:red;
+border-radius:5px;
+}
+.top>p{
+font-size:1.8em;
+color:#000;
+font-weight:bold;
+text-align:center;
+height:40px;
+vertical-align:middle;
+}
+.left{
+float:left;
+width:40px;
+height:250px;
+background-color:red;
+border-radius:5px;
+margin-top:20px;
+}
+.left>p{
+font-size:1.5em;
+font-weight:bold;
+color:#000;
+padding-top:5px;
+padding-left:7px;
+}
+.right{
+margin-top:20px;
+float:right;
+width:40px;
+height:250px;
+background-color:red;
+border-radius:5px;
+}
+.right>p{
+font-size:1.5em;
+font-weight:bold;
+color:#000;
+padding-top:5px;
+padding-left:7px;
+}
+a:link{
+color:#00FF00;
+text-decoration:none;
+
+}
+a:visit{color:#00FF00;}
+a:visited {color: #00FF00;}
+a:active {color: #00FF00;}
+.copyright{
+	font-size:14px;
+	text-align:center;
+	padding-bottom:60px;
+	color:#FF0000!important;
+}
+
+.copyright a{
+	text-decoration: none;
+	color:#00FF00;!important;
+	font-size:16px;
+}
+}
+
+.cb-slideshow li{list-style-type:none;}
+/*设置全局背景动画样式*/
+.cb-slideshow li span {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-size: cover;
+	background-position: 50% 50%;
+	opacity: 0;
+	z-index: -999;
+	-webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 50s linear infinite 0s;/* 动画名称，作用时间，动画效果，循环，延时*/
+    -moz-animation: imageAnimation 50s linear infinite 0s;
+    -o-animation: imageAnimation 50s linear infinite 0s;
+    -ms-animation: imageAnimation 50s linear infinite 0s;
+	animation: imageAnimation 50s linear infinite 0s;
+}
+
+.cb-slideshow li:nth-child(1) span { background-color:red;}
+/*背景图片和延时时间设置*/
+.cb-slideshow li:nth-child(2) span {
+    background-color:yellow;
+    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
+    -o-animation-delay: 10s;
+    -ms-animation-delay: 10s;
+    animation-delay: 10s;
+}
+.cb-slideshow li:nth-child(3) span {
+    background-color:green;
+    -webkit-animation-delay: 20s;
+    -moz-animation-delay: 20s;
+    -o-animation-delay: 20s;
+    -ms-animation-delay: 20s;
+    animation-delay: 20s;
+}
+.cb-slideshow li:nth-child(4) span {
+    background-color:blue;
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s;
+}
+.cb-slideshow li:nth-child(5) span {
+    background-color:#60C;
+    -webkit-animation-delay: 40s;
+    -moz-animation-delay: 40s;
+    -o-animation-delay: 40s;
+    -ms-animation-delay: 40s;
+    animation-delay: 40s;
+}
+/*通过透明度更改渐变的背景颜色从而产生渐变的效果*/
+@keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+	}
+	50% {
+	    opacity: 0.5;
+	}
+	100% { opacity: 1;
+	}
+}
+@-webkit-keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+	}
+	50% {
+	    opacity: 0.5;
+	}
+	100% { opacity: 1;
+	}
+}
+@-moz-keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+	}
+	50% {
+	    opacity: 0.5;
+	}
+	100% { opacity: 1;
+	}
+}
+@-o-keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+	}
+	50% {
+	    opacity: 0.5;
+	}
+	100% { opacity: 1;
+	}
+}
+@-ms-keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+	}
+	50% {
+	    opacity: 0.5;
+	}
+	100% { opacity: 1;
+	}
+}

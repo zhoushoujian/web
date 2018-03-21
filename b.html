@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>您好！我们检测到您使用的浏览器版本有点低,请尽快升级您的浏览器</title>
+			<link rel="shortcut icon" href="images/favicon.ico">
+			<link rel="stylesheet" href="css/bootstrap.css">
+        	<script src="js/jquery-1.11.1.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+<style>
+button.bg:hover{
+background-color:#337ab7;
+transition:1s all ease;
+}
+</style>
+
+	</head>
+	<body>
+		
+
+	<div class="modal fade" id="myModal" tabindex="-1">   <!--模态框声明-->
+      <div class="modal-dialog" style="top:100px;width:80%;margin:0 auto;">     <!--会话框声明-->
+    	<div class="modal-content">     <!--内容声明-->
+    		<div class="modal-header">    <!--头部-->
+    			<button class="close" data-dismiss="modal"><span>&times</span></button>
+    			<h4 class=modal-title>系统提示</h4>
+    		</div>
+    		<div class="modal-body"> <!--主体-->
+    				<p style="color:#000;">您好！我们检测到您使用的浏览器版本有点低，为了获得更好的浏览体验，强烈建议升级您的浏览器！<a href="http://down.360safe.com/cse/360cse_8.7.0.306.exe" style="text-decoration:underline;color:red;">点击此处下载最新版浏览器</a></p>
+    				<p style="color:#000;">点击关闭按钮，将跳往旧版本的网站首页，若要欣赏新版本的网页首页，请尽快升级您的浏览器。</p>
+    		</div>
+    		<div class="modal-footer">   <!--尾部-->
+    			<button class="btn btn-default bg" data-dismiss="modal">我知道了</button>
+    		</div>
+         </div>
+       </div>
+    </div>
+    <button class="btn btn-default" id="btn" data-backdrop="false" style="visibility: hidden;">点击弹出模态框</button>
+       <!-- data-backdrop="false"：点击空白处不能取消模态框-->
+
+		<script>
+       $('#btn').click(function(){
+		   <!--手动打开模态框-->
+          	$('#myModal').modal('show')
+          });
+		  <!--模拟点击是模态框默认显示-->
+      $('#btn').trigger('click');
+	   <!--关闭模态框触发一个回调函数-->
+       $('#myModal').on('hidden.bs.modal', function () {
+      window.location.href = "http://www.zhoushoujian.com/old"
+       }) 
+		</script>
+
+
+
+
+		
+	</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>扫到什么，评论什么</title>
+		<link rel="stylesheet" href="animate.css">
+		<style>
+            .content{
+            	margin:0 auto;
+            }
+			#container{
+				position:absolute;
+                text-align:center;
+                font-size:1.2em;
+                top:38%;
+                padding:10px;
+                width:94%;
+			}
+			.share{
+				position:absolute;
+	 			bottom:80px;
+	 			
+	 			margin:0 auto;
+			}
+		</style>
+		<script>
+			window.onload=function(){
+			var arr = new Array(
+				'晚上想了千条路<br>早上还得卖豆腐 ',
+				'智者想法一样<br>英雄所见略同 ',
+				'真羡慕有对象的将<br>我除了帅，一无所有',
+				'蜂多出王<br>人多出将 ',
+				'在那些铭心的夜晚<br>事实上也会经常想到你',
+				'那时年少的我们<br>不知为什么如此期待见面',
+				'一直都那么开心和快乐<br>事实并不是那样',
+				'我愿用我的全部<br>一直将你守护',
+				'看到你的笑颜<br>令人爱恋,令人目眩',
+				'天在下雨<br>我在想你',
+				'如果那天你不知道我喝了多少杯<br>你就不明白你究竟有多美 ',
+				'我会找个天使<br>替我去爱你 ',
+				'爱我所爱<br>无怨无悔',
+				'是郎给的诱惑<br>我唱起了情歌 ',
+				'你是我的小呀小苹果<br>怎么爱你都不嫌多',
+				'沉默不是我的错<br>分手不是唯一的结果',
+				'如果再看你一眼<br>是否还会有感觉',
+				'尽管呼吸着同一天空的气息<br>却无法拥抱到你',
+				'希望时光慢些吧<br>不能再让你变老了',
+				'我等的船还不来<br>我等的人还不明白 ',
+				'亲爱的姑娘我爱你<br>让我走进你的世界和你在前一起',
+				'问世间情为何物<br>只叫人生死相许 ',
+				'向天空大声呼唤<br>说声我爱你',
+				'是你让我看见干枯沙漠开出花一朵',
+				'一直都那么开心和快乐<br>事实并不是那样',
+				'我用尽一生一世来将你供养<br>爱的供养',
+				'每个强者都会有<br>背后的辛酸和挫折',
+				'One more kiss that is no crazy',
+				'不停地猜猜猜又卜了一挂<br>是上上签还是放不下 ',
+				'故事如果注定悲剧<br>何苦给我美丽 ',
+				'桥上的人入对成双<br>桥边红药叹夜太漫长',
+				'庐州月光，梨花雨凉<br>如今的你又在谁的身旁 ',
+				'朋友一生一起走<br>那些日子不再有',
+				'昆仑颠，浮生远<br>梦中只为你流连',
+				'情难却，情相牵<br>只羡鸳鸯不羡仙',
+				'只怕我自己会爱上你<br>不敢让自己靠的太近',
+				'我要送你日不落的想念<br>寄出代表爱的明信片',
+				'世间自有公道<br>付出总有回报 ',
+				'曾梦想仗剑走涯<br>看一看世界的繁华',
+				'曾让你心疼的姑娘<br>如今已悄然无踪影 ',
+				'每一次难过的时候<br>就独自看一看大海',
+				'一个人睡也不怕不怕啦<br>勇气当棉被',
+				'Oh，my love！<br>咱们结婚吧',
+				'不是因为寂寞才想你<br>而是因为想你才寂寞',
+				'不要在寂寞的时候说爱我',
+				'没有你陪伴，真的好孤单',
+				'多少旅途多少牵挂的人<br>多少爱会牵绊这一生 ',
+				'别浪<br>猥琐发育 ',
+				'看<br>天上有灰机',
+				'敌羞<br>去脱他衣 ',
+				'萝莉身<br>丽姐心',
+				'姜还是老的辣<br>清风明月共天涯',
+				'好奇心<br>害死猫',
+				'运筹帷幄之中<br>决胜千里之外',
+				'名师棒下出高徒<br>果然一身孤独',
+				'将进酒杯莫停<br>不许侮辱我造型'
+				);
+		var	content = function (arr){
+			 	var hash = Math.floor(Math.random()*(arr.length));
+			 	var result = arr[hash];			 	
+			 	return result;
+			} 
+			 document.getElementById('container').innerHTML = content(arr);
+			 
+			}
+		</script>
+	</head>
+	
+	<body>
+		<h1 align="center"> 扫到什么，评论什么</h1>
+		<div class="content">
+		<div id="container" class="animated pulse"></div>
+		<div class="share">
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_32x32">
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+        </div>
+        </div>
+	</body>
+</html>

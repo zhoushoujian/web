@@ -1,0 +1,197 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="keywords" content="">
+<meta name="describtion" content="">
+<title>Webmap</title>
+<link rel="stylesheet" href="css/style1.css">
+<link rel="shortcut icon" href="images/favicon.ico">
+<script src="js/Chart.bundle.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<style>
+    canvas {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+</style>
+</head>
+<!--移动版网站地图，因为pc版的地图用到了很多直线，做成响应式比较困难-->
+	<body>
+		<h1 align="center">网站地图</h1>
+		<div class="container">
+        <!--与pc端共享css样式-->
+	     <a class="nj" href="xiangce/nanjing/index3.html" target="_blank">南京游</a>
+		 <div class="nanjing">
+		 <a class="mdbtn" href="xiangce/nanjingxiangce/fuzimiao/index.html" target="_blank">夫子庙</a>
+	     <a class="mdbtn" href="xiangce/nanjingxiangce/qixiashan/index.html" target="_blank">栖霞山</a>
+	     <a class="mdbtn" href="xiangce/nanjingxiangce/xuanwuhu/index.html" target="_blank">玄武湖</a>
+	     <a class="mdbtn" href="xiangce/nanjingxiangce/dongwuyuan/index.html" target="_blank">动物园</a>
+	     <a class="mdbtn" href="xiangce/nanjingxiangce/zhongshanling/index.html" target="_blank">中山陵</a>
+	     <a class="mdbtn" href="xiangce/nanjingxiangce/3Dhuazhan/index.html" target="_blank">3D画展</a>
+	     <a class="mdbtn" href="xiangce/nanjingxiangce/zongtongfu/index.html" target="_blank">总统府</a>
+	     <a class="mdbtn" href="xiangce/nanjingxiangce/zhenzhuquan/index.html" target="_blank">珍珠泉</a>
+	     <a class="mdbtn" href="xiangce/nanjingxiangce/yuhuatai/index.html" target="_blank">雨花台</a>
+	     <a class="mdbtn" href="xiangce/nanjingxiangce/yuejianglou/index.html" target="_blank">阅江楼</a>
+		</div>
+		
+		 <a class="js" href="xiangce/nanjing/index3.html" target="_blank">省内游</a>
+		 <div class="jiangsu">
+	<a class="mdbtn1" href="xiangce/shengneixiangce/suzhou/index.html" target="_blank">苏州</a>
+	<a class="mdbtn1" href="xiangce/shengneixiangce/wuxi/index.html" target="_blank">无锡</a>
+	<a class="mdbtn1" href="xiangce/shengneixiangce/yangzhou/index.html" target="_blank">扬州</a>
+	<a class="mdbtn1" href="xiangce/shengneixiangce/zhenjiang/index.html" target="_blank">镇江</a>
+	<a class="mdbtn1" href="xiangce/shengneixiangce/changzhou/index.html" target="_blank">常州</a>
+	<a class="mdbtn1" href="xiangce/shengneixiangce/lianyungang/index.html" target="_blank">连云港</a>
+	<a class="mdbtn1" href="xiangce/shengneixiangce/xuzhou/index.html" target="_blank">徐州</a>
+		</div>
+		
+		 <a class="sw" href="xiangce/nanjing/index3.html" target="_blank">省外游</a>
+		 <div class="shengwai">
+	<a class="mdbtn2" href="xiangce/shengwaixiangce/guilin/index.html" target="_blank">桂林</a>
+	<a class="mdbtn2" href="xiangce/shengwaixiangce/sanqingshan/index.html" target="_blank">上饶</a>
+	<a class="mdbtn2" href="xiangce/shengwaixiangce/haerbin/index.html" target="_blank">哈尔滨</a>
+	<a class="mdbtn2" href="xiangce/shengwaixiangce/beijing/index.html" target="_blank">北京</a>
+	<a class="mdbtn2" href="xiangce/shengwaixiangce/zhangjiajie/index.html" target="_blank">张家界</a>
+	<a class="mdbtn2" href="xiangce/shengwaixiangce/wuhan/index.html" target="_blank">武汉</a>
+	<a class="mdbtn2" href="xiangce/shengwaixiangce/caishiji/index.html" target="_blank">马鞍山</a>
+	<a class="mdbtn2" href="xiangce/shengwaixiangce/xitang/index.html" target="_blank">嘉兴</a>
+	<a class="mdbtn2" href="xiangce/shengwaixiangce/zaozhuang/index.html" target="_blank">枣庄</a>
+	<a class="mdbtn2" href="xiangce/shengwaixiangce/huangshan/index.html" target="_blank">黄山</a>
+	<a class="mdbtn2" href="xiangce/shengwaixiangce/qingdao/index.html" target="_blank">青岛</a>
+	<a class="mdbtn2" href="xiangce/shengwaixiangce/taishan/index.html" target="_blank">泰安</a>
+	<a class="mdbtn2" href="xiangce/shengwaixiangce/shanghai/index.html" target="_blank">上海</a>
+	<a class="mdbtn2" href="xiangce/shengwaixiangce/xihu/index.html" target="_blank">杭州</a>
+		</div>
+		
+		 <a class="cz" href="xiangce/nanjing/index3.html" target="_blank">在常州</a>
+		 <div class="changzhou">
+	<a class="mdbtn6" href="xiangce/changzhou/hongmei/index.html" target="_blank">红梅公园</a>
+	<a class="mdbtn6" href="xiangce/changzhou/bowuguan/index.html" target="_blank">常州博物馆</a>
+	<a class="mdbtn6" href="xiangce/changzhou/zijing/index.html" target="_blank">紫荆公园</a>
+	<a class="mdbtn6" href="xiangce/changzhou/konglongyuan/index.html" target="_blank">中华恐龙园</a>
+	<a class="mdbtn6" href="xiangce/changzhou/qingfeng/index.html" target="_blank">青峰公园</a>
+	<a class="mdbtn6" href="xiangce/changzhou/jingchuang/index.html" target="_blank">荆川公园</a>
+		</div>
+		
+		<a class="dx" href="xiangce/nanjing/index3.html" target="_blank">大学回忆录</a>
+		 <div class="huiyilu">
+	<a class="mdbtn3" href="daxue/huiyilu.html" target="_blank">大学生涯总论</a>
+	<a class="mdbtn3" href="daxue/naxieshi.html" target="_blank">大学必做之事</a>
+	<a class="mdbtn3" href="daxue/shunjian.html" target="_blank">难忘的瞬间</a>
+	<a class="mdbtn3" href="daxue/dianliang.html" target="_blank">我的旅游报告</a>
+	<a class="mdbtn3" href="daxue/works.html" target="_blank">我的作品集</a>
+	<a class="mdbtn3" href="daxue/young.html" target="_blank">青春的映画</a>
+	<a class="mdbtn3" href="daxue/school.html" target="_blank">学校依旧美</a>
+		</div>
+		
+		 <a class="zd" href="xiangce/nanjing/index3.html" target="_blank">我的其他站点</a>
+		 <div class="othersite">
+	<a class="mdbtn4" href="http://blog.zhoushoujian.com" target="_blank">我的博客</a>
+	<a class="mdbtn4" href="http://dh.zhoushoujian.com" target="_blank">快捷导航</a>
+	<a class="mdbtn4" href="http://www.19920212.top" target="_blank">美女写真</a>
+	<a class="mdbtn4" href="http://www.zhoushoujian.top" target="_blank">创慧博才</a>
+		</div>
+		
+		 <a class="hl" href="xiangce/nanjing/index3.html" target="_blank">好链推荐</a>
+		 <div class="goodlinks">
+	<a class="mdbtn5" href="qingrenjie/wishes.htm" target="_blank">情人节快乐</a>
+	<a class="mdbtn5" href="mid-autumn/index.html" target="_blank">中秋节快乐</a>
+	<a class="mdbtn5" href="guoq/index.html" target="_blank">国庆节快乐</a>
+	<a class="mdbtn5" href="pinganye/index.html" target="_blank">平安夜幸福</a>
+	<a class="mdbtn5" href="chunjie/index.html" target="_blank">新春快乐</a>
+	<a class="mdbtn5" href="ball-pool/index.html" target="_blank">开心一刻</a>
+	<a class="mdbtn5" href="Art/index.html" target="_blank">艺术欣赏</a>
+		</div>
+		
+    <a class="qt" href="xiangce/nanjing/index3.html" target="_blank">其他页面</a>
+		 <div class="others">
+	<a href="old/index.html" target="_blank">主页旧版本</a>
+    <a href="xiangce/jiaxiang/index.html" target="_blank">我的家乡</a>
+    <a href="xiangce/xuexiao/sanjiang1.html" target="_blank">我的学校</a>
+    <a href="xiangce/xuexiao/sanjiang2.html" target="_blank">创意版</a>
+    <a href="xiangce/xuexiao/sanjiang3.html" target="_blank">画册版</a>
+		</div>
+		
+		
+		
+	 <div id="canvas-holder" >
+     <!--下面的这个height很重要，如果不加则移动端显示的甜圈非常小-->
+        <canvas id="chart-area" height="320"></canvas>
+    </div>
+    <script>
+    window.onload = function() {
+        var ctx = document.getElementById("chart-area").getContext("2d");
+        window.myDoughnut = new Chart(ctx, config);
+    };
+
+    var config = {
+        type: 'doughnut',
+        data: {
+            datasets: [ {
+                data: [
+                    10,
+                    7,
+                    13,
+                    6,
+                    7,
+                    4,
+                    7,
+                    5
+                ],
+				<!--色彩与html的按钮色彩保持一致-->
+                backgroundColor: [
+                    "#45c46f",
+                    "#1784fb",
+                    "#d2322d",
+                    "#6950a1",
+                    "#f0ad4e",
+                    "#39b3d7",
+                    "#00ffff",
+                    "#f58f98"
+                ],
+				<!--貌似这个标在这签没啥用，竟然还舍不得删-->
+                label: '你猜猜'
+            }],
+            labels: [
+                "南京游",
+                "省内游",
+                "省外游",
+                "在常州",
+                "大学回忆录",
+                "其他站点",
+                "好链推荐",
+                "其他页面"
+
+            ]
+        },
+        options: {
+            responsive: true,
+			<!--如果百分比改成0，就是饼状图了-->
+            cutoutPercentage : 30,
+            legend: {
+                position: 'top',
+            },
+            title: {
+                display: true,
+                text: '本站的网页页面结构甜圈统计图',
+                fontSize : 18 ,
+            },
+            animation: {
+                animateScale: true,
+                animateRotate: true
+            }
+        }
+    };
+
+
+
+    
+    </script>
+<br>
+	<p style="text-align:center;color:#e8e8e8">&copy copyright@2017 www.zhoushoujian.com </p>
+</div>		
+	</body>
+</html>

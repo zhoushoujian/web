@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>myResume</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1;">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			width: 90%;
+			border: 2px solid #000;
+			font-size: 14px;
+			padding: 1%;
+			margin: 0 auto;
+			box-shadow: 0 0 10px 2px #696969;
+			border-radius: 10px;
+			background: linear-gradient(top, #ebedee 0%, #fdfbfb 100%);
+			background: -webkit-linear-gradient(top, #ebedee 0%, #fdfbfb 100%);
+			background: -moz-linear-gradient(top, #ebedee 0%, #fdfbfb 100%);
+			background: -ms-linear-gradient(top, #ebedee 0%, #fdfbfb 100%);
+			background: -o-linear-gradient(top, #ebedee 0%, #fdfbfb 100%);
+		}
+
+		h1 {
+			display: inline-block;
+			font-size: 1.8em;
+
+		}
+
+		h1 span {
+			display: inline-block;
+			margin-left: 1em;
+			font-size: 0.6em;
+			color: #696969;
+			font-style: italic;
+		}
+
+		.basic {
+			margin-top: 10px;
+		}
+
+		kbd {
+			padding: 2px 4px;
+			font-size: 150%;
+			color: #fff;
+			background-color: #333;
+			border-radius: 3px;
+			box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
+		}
+
+		.basic span {
+			font-style: italic;
+			color: #696969;
+		}
+
+		.basic .info {
+			margin: 0 auto;
+			width: 95%;
+			padding-left: 10px;
+			padding-bottom: 30px;
+			border-top: 1px solid #696969;
+			border-left: 1px solid #696969;
+		}
+
+		.basic .info .left {
+			float: left;
+			padding-top: 10px;
+		}
+
+		.basic .info .right {
+			float: right;
+			padding-top: 10px;
+		}
+
+		.exp {
+			margin-top: -10px;
+		}
+
+		.exp span {
+			font-style: italic;
+			color: #696969;
+		}
+
+		.exp .working {
+			margin: 0 auto;
+			width: 95%;
+			padding: 10px 0 30px 10px;
+			border-top: 1px solid #696969;
+			border-left: 1px solid #696969;
+		}
+
+		.skills {
+			margin-top: -10px;
+		}
+
+		.skills span {
+			font-style: italic;
+			color: #696969;
+		}
+
+		.skills .working_skills {
+			margin: 0 auto;
+			width: 95%;
+			padding: 10px 0 30px 10px;
+			border-top: 1px solid #696969;
+			border-left: 1px solid #696969;
+		}
+
+		.skills .working_skills ul {
+			margin-left: 20px;
+		}
+
+		.works {
+			margin-top: -10px;
+		}
+
+		.works span {
+			font-style: italic;
+			color: #696969;
+		}
+
+		.works .myworks {
+			margin: 0 auto;
+			width: 95%;
+			padding: 10px 0 30px 10px;
+			border-top: 1px solid #696969;
+			border-left: 1px solid #696969;
+		}
+
+		.works .myworks a:nth-of-type(1) {
+			display: block;
+			float: left;
+			text-decoration: none;
+		}
+
+		.works .myworks a:nth-of-type(2) {
+			display: block;
+			float: right;
+			text-decoration: none;
+			margin-right: 8px;
+		}
+
+		.copyright {
+			text-align: center;
+			color: #696969;
+			font-size: 10px;
+		}
+
+		@media screen and (min-width:997px) {
+			.container {
+				width: 997px;
+				font-size: 18px;
+			}
+			.works .myworks a:nth-of-type(1) {
+				display: block;
+				float: left;
+				text-decoration: underline;
+				margin-left: 8px;
+				color: #000;
+			}
+			.works .myworks a:nth-of-type(2) {
+				display: block;
+				float: left;
+				text-decoration: underline;
+				margin-left: 15px;
+				color: #000;
+			}
+			.works .myworks a:hover {
+				text-decoration: underline;
+				color: #f00;
+				transition: all 0.3s ease;
+				-webkit-transition: all 0.3s ease;
+				-moz-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
+				-ms-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+			}
+			.copyright {
+				text-align: center;
+				margin-top: 10px;
+				color: #696969;
+				font-size: 14px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1> My Resume<span>Mobile first</span> </h1>
+		<hr/>
+		<div class="basic">
+			<kbd>个人基本信息</kbd>&nbsp;&nbsp;<span>basic information</span>
+			<div class="info">
+				<div class="left">
+					姓&nbsp;&nbsp;名：周守俭<br> 民&nbsp;&nbsp;族：汉
+					<br> 婚&nbsp;&nbsp;姻：否
+					<br> 电&nbsp;&nbsp;话：17302554875
+					<br> 工作年限：三年软件测试经验
+				</div>
+				<div class="right">
+					求职岗位：自动化测试工程师<br> 出生年月：1992.02
+					<br> 学&nbsp;&nbsp;历：本科
+					<br> 身高体重：181cm,75kg
+					<br> 电子邮箱：qianchengyimeng@qq.com
+				</div>
+				<div style="clear:both"></div>
+
+			</div>
+
+		</div>
+		<div class="exp">
+			<kbd>项目&经验</kbd>&nbsp;&nbsp;<span>project&experice</span>
+			<div class="working">
+				<b>公司</b>: 中软国际华为业务线<br>
+				<b>项目经验</b>:&nbsp;融合软终端项目（华为内部通讯软件）<br>
+				<b>任职岗位</b>:自动化测试工程师<br>
+				<b>项目描述</b>:<br>
+				
+					<li>融合软终端是华为内部的一个<b>聊天工具</b>>，旨在替代现有的聊天软件espace。</li>
+					<li>此项目采用react开发语言，同时开发了pc端，mac端，android和ios四个版本。</li>
+					<li>期间担任自动化测试，前期负责pc端的自动化测试兼性能测试，后期负责android端的自动化，pc端采用<b>selenium框架</b>，android端采用<b>appium框架</b>，脚本语言全部采用<b>nodejs</b>。</li>
+			
+					<b>项目职责</b>:<br> 担任pc端和android端<b>自动化测试骨干</b>，独自搭建selenium和appium测试框架，每天按时完成上级布置的测试脚本输出，及时完成与自动化周边接口的对接工作。
+					<br>
+					<b>项目业绩</b>:<br> 在职期间表现优异，开发了许多提神工作效率的小工具，多次收到领导表扬。空闲时间经常与前端人员交流技术和经验，多次协助开发解决问题。
+					<br>
+				
+			</div>
+		</div>
+		<div class="skills">
+			<kbd>职业技能</kbd>&nbsp;&nbsp;<span>working skills</span>
+			<div class="working_skills">
+				<ul>
+					<li>在职期间担任自动化测试骨干，<b>独自一人搭建selenium和appium自动化测试框架并及时对接自动化框架的周边接口</b></li>
+					<li>在工作前期担任前端开发工作，对开发的业务和处理逻辑清晰明朗，在自动化测试方面擅长nodejs</li>
+					<li>熟悉<b>性能测试</b>和<b>wireshar</b>k抓包分析，显著提高工作效率，被客户表扬多次</li>
+					<li>本人热爱测试工作，拒绝平庸，积极进取，有团队精神和很强的发现问题和分析问题的能力，良好的沟通能力和英文文档读写能力</li>
+				</ul>
+			</div>
+		</div>
+		<div class="exp">
+			<kbd>自我评价</kbd>&nbsp;&nbsp;<span>evaluation</span>
+			<div class="working">
+				热爱测试工作，工作积极，善于总结输出文档，有团队协作精神和很强的发现问题分析问题的能力，有着良好的沟通能力，文档撰写能力和良好的英文文档读写能力。
+			</div>
+		</div>
+		<div class="copyright">copyright &copy;2018 www.zhoushoujian.com all rights reversed</div>
+	</div>
+</body>
+
+</html>

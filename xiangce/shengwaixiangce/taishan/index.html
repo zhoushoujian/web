@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="keywords" content="周守俭的旅游相册空间，泰山_泰山旅游_泰山图片">
+<meta name="description" content="周守俭的旅游相册空间-巍峨的泰山">
+<link rel="shortcut icon" href="images/favicon.ico">
+<title>巍峨的泰山</title>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="js/jquery.js"></script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<script>
+(function(){
+   var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?f5aeba7a666c620e63235419ddc971d4":"https://jspassport.ssl.qhimg.com/11.0.1.js?f5aeba7a666c620e63235419ddc971d4";
+   document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+</script>
+<script>
+//<![CDATA[
+$(function(){	
+	
+    var x = 22;
+	var y = 20;
+		
+	$("a.smallimage").hover(function(e){
+		$("body").append('<p id="bigimage"><img src="'+ this.rel + '" alt="" /></p>');
+        $(this).find('img').stop().fadeTo('slow',0.5);		
+		widthJudge(e);
+	    $("#bigimage").fadeIn('fast');
+	},function(){
+	    $(this).find('img').stop().fadeTo('slow',1);
+		$("#bigimage").remove();
+    });	
+	
+	$("a.smallimage").mousemove(function(e){
+		widthJudge(e);
+	});	
+	
+    function widthJudge(e){
+		var marginRight = document.documentElement.clientWidth - e.pageX; 
+		var imageWidth = $("#bigimage").width();
+		if(marginRight < imageWidth)
+		{
+		    x = imageWidth + 22;
+			$("#bigimage").css({top:(e.pageY - y ) + 'px',left:(e.pageX - x ) + 'px'});	
+		}else{
+		    x = 22;
+		    $("#bigimage").css({top:(e.pageY - y ) + 'px',left:(e.pageX + x ) + 'px'});
+        };	
+	}
+});
+//]]>
+</script>
+</head>
+<body class="keBody">
+<h1 class="keTitle"><a href="../../shengwai/index.html">巍峨的泰山</a></h1>
+<div class="kePublic">
+<!--效果html开始-->
+<ul id="gallery">
+
+  <li><a href="images/123/IMG_20150818_180508_HDR.jpg" class="smallimage" rel="images/001_big.jpg"><img src="images/001_small.jpg" alt="周守俭" title="泰山" /></a></li>
+  <li><a href="images/123/IMG_20150818_192910_HDR.jpg" class="smallimage" rel="images/002_big.jpg"><img src="images/002_small.jpg" alt="周守俭" title="泰山" /></a></li>
+  <li><a href="images/123/IMG_20150818_215529.jpg" class="smallimage" rel="images/003_big.jpg"><img src="images/003_small.jpg" alt="周守俭" title="泰山" /></a></li>
+  <li><a href="images/123/IMG_20150818_220457.jpg" class="smallimage" rel="images/004_big.jpg"><img src="images/004_small.jpg" alt="周守俭" title="泰山" /></a></li>
+  <li><a href="images/123/IMG_20150819_055719_HDR.jpg" class="smallimage" rel="images/005_big.jpg"><img src="images/005_small.jpg" alt="周守俭" title="泰山" /></a></li>
+  <li><a href="images/123/IMG_20150819_055907_HDR.jpg" class="smallimage" rel="images/006_big.jpg"><img src="images/006_small.jpg" alt="周守俭" title="泰山" /></a></li>
+  <li><a href="images/123/IMG_20150819_060233_HDR.jpg" class="smallimage" rel="images/007_big.jpg"><img src="images/007_small.jpg" alt="周守俭" title="泰山" /></a></li>
+  <li><a href="images/123/IMG_20150819_060327_HDR.jpg" class="smallimage" rel="images/008_big.jpg"><img src="images/008_small.jpg" alt="周守俭" title="泰山" /></a></li>
+  <li><a href="images/123/IMG_20150819_062017_HDR.jpg" class="smallimage" rel="images/009_big.jpg"><img src="images/009_small.jpg" alt="周守俭" title="泰山" /></a></li>
+  <li><a href="images/123/IMG_20150819_062410_HDR.jpg" class="smallimage" rel="images/010_big.jpg"><img src="images/010_small.jpg" alt="周守俭" title="泰山" /></a></li>
+  <li><a href="images/123/IMG_20150819_062925_HDR.jpg" class="smallimage" rel="images/011_big.jpg"><img src="images/011_small.jpg" alt="周守俭" title="泰山" /></a></li>
+  <li><a href="images/123/IMG_20150819_063124_HDR.jpg" class="smallimage" rel="images/012_big.jpg"><img src="images/012_small.jpg" alt="周守俭" title="泰山" /></a></li>
+  <li><a href="images/123/IMG_20150819_064751_HDR.jpg" class="smallimage" rel="images/013_big.jpg"><img src="images/013_small.jpg" alt="周守俭" title="泰山" /></a></li>
+  <li><a href="images/123/IMG_20150819_070446_HDR.jpg" class="smallimage" rel="images/014_big.jpg"><img src="images/014_small.jpg" alt="周守俭" title="泰山" /></a></li>
+  <li><a href="images/123/IMG_20150819_074746_HDR.jpg" class="smallimage" rel="images/015_big.jpg"><img src="images/015_small.jpg" alt="周守俭" title="泰山" /></a></li>
+  <li><a href="images/123/IMG_20150819_075051_HDR.jpg" class="smallimage" rel="images/016_big.jpg"><img src="images/016_small.jpg" alt="周守俭" title="泰山" /></a></li>
+  <li><a href="images/123/IMG_20150819_075316_HDR.jpg" class="smallimage" rel="images/017_big.jpg"><img src="images/017_small.jpg" alt="周守俭" title="泰山" /></a></li>
+  <li><a href="images/123/IMG_20150819_080008_HDR.jpg" class="smallimage" rel="images/018_big.jpg"><img src="images/018_small.jpg" alt="周守俭" title="泰山" /></a></li>
+  <li><a href="images/123/IMG_20150819_080027_HDR.jpg" class="smallimage" rel="images/019_big.jpg"><img src="images/019_small.jpg" alt="周守俭" title="泰山" /></a></li>
+  <li><a href="images/123/IMG_20150819_092607_HDR.jpg" class="smallimage" rel="images/020_big.jpg"><img src="images/020_small.jpg" alt="周守俭" title="泰山" /></a></li>
+</ul>
+<div class="clear">
+  <p>&nbsp;</p>
+</div>
+</div>
+<div class="keBottom">
+<p class="keTxtP"><strong>泰山（Mount Tai），世界文化与自然双重遗产，世界地质公园，全国重点文物保护单位，国家重点风景名胜区，国家AAAAA级旅游景区。泰山位于山东省泰安市中部。主峰玉皇顶海拔1545米，气势雄伟磅礴，有“五岳之首”、“五岳之长”、“天下第一山”之称。自古以来，中国人就崇拜泰山，有“泰山安，四海皆安”的说法。在汉族传统文化中，泰山一直有“五岳独尊”的美誉。自秦始皇封禅泰山后，历朝历代帝王不断在泰山封禅和祭祀，并且在泰山上下建庙塑神，刻石题字。古代的文人雅士更对泰山仰慕备至，纷纷前来游历，作诗记文。泰山宏大的山体上留下了20余处古建筑群，2200余处碑碣石刻。泰山风景以壮丽著称。重叠的山势，厚重的形体，苍松巨石的烘托，云烟的变化，使它在雄浑中兼有明丽，静穆中透着神奇。最为有名的是“泰山四大奇观”。古人以“泰山北斗”来喻指人道德高、名望重或有卓越成就为众人所敬仰的人。</strong></p>
+</div>
+</body>
+</html>
