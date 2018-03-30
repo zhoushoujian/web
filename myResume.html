@@ -74,7 +74,7 @@
 		}
 
 		.basic .info .right {
-			float: right;
+			float: left;
 			padding-top: 10px;
 		}
 
@@ -146,6 +146,37 @@
 			margin-right: 8px;
 		}
 
+		.works {
+			position: relative;
+			height: 75px;
+		}
+
+		.works .working a:nth-child(1) {
+			position: absolute;
+			color: #000;
+			display: inline-block;
+			left: 25px;
+			top: 40px;
+		}
+
+		.works .working a:nth-child(2) {
+			position: absolute;
+			color: #000;
+			display: inline-block;
+			right: 25px;
+			top: 40px;
+		}
+
+		.works .working a:hover {
+			color: #f00;
+			transition: all 0.3s ease;
+			-webkit-transition: all 0.3s ease;
+			-moz-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			-ms-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+		}
+
 		.copyright {
 			text-align: center;
 			color: #696969;
@@ -157,29 +188,8 @@
 				width: 997px;
 				font-size: 18px;
 			}
-			.works .myworks a:nth-of-type(1) {
-				display: block;
-				float: left;
-				text-decoration: underline;
-				margin-left: 8px;
-				color: #000;
-			}
-			.works .myworks a:nth-of-type(2) {
-				display: block;
-				float: left;
-				text-decoration: underline;
-				margin-left: 15px;
-				color: #000;
-			}
-			.works .myworks a:hover {
-				text-decoration: underline;
-				color: #f00;
-				transition: all 0.3s ease;
-				-webkit-transition: all 0.3s ease;
-				-moz-transition: all 0.3s ease;
-				-o-transition: all 0.3s ease;
-				-ms-transition: all 0.3s ease;
-				transition: all 0.3s ease;
+			.basic .info .right {
+				float: right;
 			}
 			.copyright {
 				text-align: center;
@@ -202,7 +212,7 @@
 					姓&nbsp;&nbsp;名：周守俭<br> 民&nbsp;&nbsp;族：汉
 					<br> 婚&nbsp;&nbsp;姻：否
 					<br> 电&nbsp;&nbsp;话：17302554875
-					<br> 工作年限：三年软件测试经验
+					<br> 工作年限：1年前端开发经验，1年自动化测试经验
 				</div>
 				<div class="right">
 					求职岗位：自动化测试工程师<br> 出生年月：1992.02
@@ -222,16 +232,16 @@
 				<b>项目经验</b>:&nbsp;融合软终端项目（华为内部通讯软件）<br>
 				<b>任职岗位</b>:自动化测试工程师<br>
 				<b>项目描述</b>:<br>
-				
-					<li>融合软终端是华为内部的一个<b>聊天工具</b>>，旨在替代现有的聊天软件espace。</li>
-					<li>此项目采用react开发语言，同时开发了pc端，mac端，android和ios四个版本。</li>
-					<li>期间担任自动化测试，前期负责pc端的自动化测试兼性能测试，后期负责android端的自动化，pc端采用<b>selenium框架</b>，android端采用<b>appium框架</b>，脚本语言全部采用<b>nodejs</b>。</li>
-			
-					<b>项目职责</b>:<br> 担任pc端和android端<b>自动化测试骨干</b>，独自搭建selenium和appium测试框架，每天按时完成上级布置的测试脚本输出，及时完成与自动化周边接口的对接工作。
-					<br>
-					<b>项目业绩</b>:<br> 在职期间表现优异，开发了许多提神工作效率的小工具，多次收到领导表扬。空闲时间经常与前端人员交流技术和经验，多次协助开发解决问题。
-					<br>
-				
+
+				<li>融合软终端是华为内部的一个<b>通信软终端</b>，旨在替代现有的聊天软件espace。</li>
+				<li>此项目采用react开发语言，同时开发了pc端，mac端，android和ios四个版本。</li>
+				<li>期间担任自动化测试，负责p自动化测试兼性能测试，自动化测试pc端采用<b>selenium框架</b>，android端采用<b>appium框架</b>，脚本语言全部采用<b>nodejs</b>。</li>
+
+				<b>项目职责</b>:<br> 担任pc端和android端<b>自动化测试骨干</b>，独自完成对selenium和appium测试框架的搭建、维护、持续集成和脚本编写，擅长web测试和基于浏览器开发的hybrid应用程序
+				<br>
+				<b>项目业绩</b>:<br> 在职期间表现优异，开发了许多提神工作效率的小工具，多次收到领导表扬。空闲时间经常与前端人员交流技术和经验，多次协助开发解决问题。
+				<br>
+
 			</div>
 		</div>
 		<div class="skills">
@@ -240,8 +250,9 @@
 				<ul>
 					<li>在职期间担任自动化测试骨干，<b>独自一人搭建selenium和appium自动化测试框架并及时对接自动化框架的周边接口</b></li>
 					<li>在工作前期担任前端开发工作，对开发的业务和处理逻辑清晰明朗，在自动化测试方面擅长nodejs</li>
-					<li>熟悉<b>性能测试</b>和<b>wireshar</b>k抓包分析，显著提高工作效率，被客户表扬多次</li>
-					<li>本人热爱测试工作，拒绝平庸，积极进取，有团队精神和很强的发现问题和分析问题的能力，良好的沟通能力和英文文档读写能力</li>
+					<li>掌握<b>性能测试</b>(loadrunner或jmeter)和<b>wireshar</b>k抓包分析，显著提高工作效率，被客户表扬多次</li>
+					<li>掌握mocha测试框架，原生js开发能力，nodejs编程语言(包括nodejs分析txt、excle、html等文件)，擅长<b>命令行</b>操作,<b>git/svn</b>版本控制系统，xmind，bug管理系统等</li>
+					<li>熟悉：企业通讯组网知识，如ecs，usm，mediaX，mcu等;<b>OSI七层网络模型</b>；通讯协议；TCP三次握手和四次挥手；</li>
 				</ul>
 			</div>
 		</div>
@@ -249,6 +260,12 @@
 			<kbd>自我评价</kbd>&nbsp;&nbsp;<span>evaluation</span>
 			<div class="working">
 				热爱测试工作，工作积极，善于总结输出文档，有团队协作精神和很强的发现问题分析问题的能力，有着良好的沟通能力，文档撰写能力和良好的英文文档读写能力。
+			</div>
+		</div>
+		<div class="works">
+			<kbd>我的作品</kbd>&nbsp;&nbsp;<span>works</span>
+			<div class="working">
+				<a target="_blank" href="https:\\github.com\zhoushoujian">我的github仓库</a> <a target="_blank" href="http://blog.zhoushoujian.com">我的技术博客</a>
 			</div>
 		</div>
 		<div class="copyright">copyright &copy;2018 www.zhoushoujian.com all rights reversed</div>
