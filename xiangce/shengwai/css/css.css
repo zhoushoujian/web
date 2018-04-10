@@ -38,8 +38,10 @@ input::-ms-clear {display:none;}
 #num_10 { background: url(../images/bac11.jpg) no-repeat center #03F; background-size: 100% 100%; }
 #num_11 { background: url(../images/bac12.jpg) no-repeat center #03F; background-size: 100% 100%; }
 #num_12 { background: url(../images/bac0.jpg) no-repeat center #03F; background-size: 100% 100%; }
-#num_13 { background: url(../images/bac_d.jpg) no-repeat center #03F; background-size: 100% 100%; }
-.fixed_r { position: absolute; right: 5px; top: 50%;margin-top:-267px; z-index: 999; }
+#num_13 { background: url(../images/bac13.jpg) no-repeat center #03F; background-size: 100% 100%; }
+#num_14 { background: url(../images/bac14.jpg) no-repeat center #03F; background-size: 100% 100%; }
+#num_15 { background: url(../images/bac15.jpg) no-repeat center #03F; background-size: 100% 100%; }
+.fixed_r { position: absolute; right: 5px; top: 50%;margin-top:-328px; z-index: 999; }
 .fixed_r li { width: 40px; height: 40px; background: #fff; border-bottom: 1px solid #ccc; line-height: 40px; color: #333; font-size: 16px; text-align: center; cursor: pointer; }
 .fixed_r li.on { background:#C00; color: #fff; }
 
@@ -47,7 +49,7 @@ input::-ms-clear {display:none;}
 	position:fixed;
 	top:2px;
 	left:50%;
-	margin-left:-715px;
+	margin-left:-880px;
     box-shadow:2px 2px 4px 1px #111;
 	list-style:none;
 	z-index:2;
