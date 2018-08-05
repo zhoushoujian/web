@@ -23,9 +23,10 @@ module.exports = class Render {
       if (!exist) {
         logger.debug("render  文件不存在!")
         that.res.writeHead(404, {
-          'Content-Type': 'text/plain'
+          'Content-Type': 'text/html;charset=UTF-8'
         });
-        that.res.write('Not Found');
+        var content = fs.readFileSync(require('path').join(__dirname,'../404.html'));
+        that.res.write(content);
         that.res.end();
         return
       } else {
