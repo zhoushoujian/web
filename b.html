@@ -40,14 +40,14 @@ transition:1s all ease;
 
 		<script>
        $('#btn').click(function(){
-		   <!--手动打开模态框-->
+		//    <!--手动打开模态框-->
           	$('#myModal').modal('show')
           });
-		  <!--模拟点击是模态框默认显示-->
+		//   <!--模拟点击是模态框默认显示-->
       $('#btn').trigger('click');
-	   <!--关闭模态框触发一个回调函数-->
+	//    <!--关闭模态框触发一个回调函数-->
        $('#myModal').on('hidden.bs.modal', function () {
-      window.location.href = "http://www.zhoushoujian.com/old"
+      window.location.href = "old/index.html"
        }) 
 		</script>
 
