@@ -1,85 +1,345 @@
 ﻿@charset "utf-8";
-/* CSS Document */
-html { overflow: hidden; }
-html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; }
-body { font-family: "微软雅黑"; font-size: 12px; color: #F00; word-wrap: break-word; behavior: url("csshover.htc"); overflow: hidden; }
-button, input, select, textarea { font: 12px/1.5 Arial, "宋体", Helvetica, Verdana, sans-serif; word-wrap: break-word; color: #0F0; }
-ul, li { list-style: none; margin: 0; padding: 0; }
-h1, h2, h3, h4, h5, h6 { font-weight: normal; font-size: 100%; }
-img { border: none; border: 0; vertical-align:middle; }
-a {
-	text-decoration: none;
-	outline: none;
-	color: #FFFFFF;
-}
-p { margin: 0; padding: 0; }
-input, select, textarea { vertical-align: middle; *font-size:100%;}
-input { margin: 0; outline: none; padding: 0; }
-input::-ms-clear {display:none;}
-.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
-.clearfix { *zoom:1}
-.ddw { position: absolute; left: 0; top: 0; color: #000; font-size: 16px; z-index: 9999; }
-.ddw2 { position: absolute; left: 20px; top: 0; color: #000; font-size: 16px; z-index: 9999; }
-.num_box { position: relative; }
-.num { color: #fff; font-size: 50px; width: 100%; text-align: center; position: relative; }
-.num p { position: absolute; top: 0; left: 50%; margin-left: -315px; background:#000; padding:3px 15px; opacity:0.6; filter:alpha(opacity=60) }
-.num ul { width: 100%; position: absolute; left: 0; top: 0; height: 100%; }
-.num ul li { float: left; height: 100%; position: relative; }
-#num_0 { background: url(../images/bac1.jpg) no-repeat center #000000; background-size: 100% 100%; }
-#num_1 { background: url(../images/bac2.jpg) no-repeat center #03F; background-size: 100% 100%; }
-#num_2 { background: url(../images/bac3.jpg) no-repeat center #03F; background-size: 100% 100%; }
-#num_3 { background: url(../images/bac4.jpg) no-repeat center #03F; background-size: 100% 100%; }
-#num_4 { background: url(../images/bac5.jpg) no-repeat center #03F; background-size: 100% 100%; }
-#num_5 { background: url(../images/bac6.jpg) no-repeat center #03F; background-size: 100% 100%; }
-#num_6 { background: url(../images/bac7.jpg) no-repeat center #03F; background-size: 100% 100%; }
-#num_7 { background: url(../images/bac8.jpg) no-repeat center #03F; background-size: 100% 100%; }
-#num_8 { background: url(../images/bac9.jpg) no-repeat center #03F; background-size: 100% 100%; }
-#num_9 { background: url(../images/bac10.jpg) no-repeat center #03F; background-size: 100% 100%; }
-#num_10 { background: url(../images/bac11.jpg) no-repeat center #03F; background-size: 100% 100%; }
-#num_11 { background: url(../images/bac12.jpg) no-repeat center #03F; background-size: 100% 100%; }
-#num_12 { background: url(../images/bac0.jpg) no-repeat center #03F; background-size: 100% 100%; }
-#num_13 { background: url(../images/bac13.jpg) no-repeat center #03F; background-size: 100% 100%; }
-#num_14 { background: url(../images/bac14.jpg) no-repeat center #03F; background-size: 100% 100%; }
-#num_15 { background: url(../images/bac15.jpg) no-repeat center #03F; background-size: 100% 100%; }
-.fixed_r { position: absolute; right: 5px; top: 50%;margin-top:-328px; z-index: 999; }
-.fixed_r li { width: 40px; height: 40px; background: #fff; border-bottom: 1px solid #ccc; line-height: 40px; color: #333; font-size: 16px; text-align: center; cursor: pointer; }
-.fixed_r li.on { background:#C00; color: #fff; }
 
-.navtop{
-	position:fixed;
-	top:2px;
-	left:50%;
-	margin-left:-880px;
-    box-shadow:2px 2px 4px 1px #111;
-	list-style:none;
-	z-index:2;
-    border-radius:10px;
-	background:#222;
-	opacity:0.8;
-	filter:alpha(opacity=80);
-	}
-.navtop li{
-	display:block;
-	float:left;
-	padding:10px 15px;
-    width:80px;
-	line-height:30px;
-	height:30px;
-	}
-.navtop li a{
-	color:#fff;
-	font-size:16px;
-	text-decoration:none;
-	}
-.navtop li a:hover{
-	color:#f00;
-	transition: 0.3s all ease;
-	}
-@media only screen and (max-width:1900px){
-	.navtop{
-		position:fixed;
-		top:2px;
-		left:0;
-		margin-left:0;
-		}
+/* CSS Document */
+
+html {
+    overflow: hidden;
+}
+
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #F00;
+    word-wrap: break-word;
+    behavior: url("csshover.htc");
+    overflow: hidden;
+}
+
+button,
+input,
+select,
+textarea {
+    font: 12px/1.5 Arial, "宋体", Helvetica, Verdana, sans-serif;
+    word-wrap: break-word;
+    color: #0F0;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+img {
+    border: none;
+    border: 0;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: #FFFFFF;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+input,
+select,
+textarea {
+    vertical-align: middle;
+    *font-size: 100%;
+}
+
+input {
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.ddw {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #000;
+    font-size: 16px;
+    z-index: 9999;
+}
+
+.ddw2 {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    color: #000;
+    font-size: 16px;
+    z-index: 9999;
+}
+
+.num_box {
+    position: relative;
+}
+
+.num {
+    color: #fff;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.num p {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -315px;
+    background: #000;
+    padding: 3px 15px;
+    opacity: 0.6;
+    filter: alpha(opacity=60)
+}
+
+.num ul {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.num ul li {
+    float: left;
+    height: 100%;
+    position: relative;
+}
+
+#num_0 {
+    background: url(../images/bac1.jpg) no-repeat center #000000;
+    background-size: 100% 100%;
+}
+
+#num_1 {
+    background: url(../images/bac2.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+#num_2 {
+    background: url(../images/bac3.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+#num_3 {
+    background: url(../images/bac4.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+#num_4 {
+    background: url(../images/bac5.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+#num_5 {
+    background: url(../images/bac6.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+#num_6 {
+    background: url(../images/bac7.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+#num_7 {
+    background: url(../images/bac8.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+#num_8 {
+    background: url(../images/bac9.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+#num_9 {
+    background: url(../images/bac10.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+#num_10 {
+    background: url(../images/bac11.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+#num_11 {
+    background: url(../images/bac12.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+#num_12 {
+    background: url(../images/bac0.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+#num_13 {
+    background: url(../images/bac13.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+#num_14 {
+    background: url(../images/bac14.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+#num_15 {
+    background: url(../images/bac15.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+#num_16 {
+    background: url(../images/bac16.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+#num_17 {
+    background: url(../images/bac17.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+#num_18 {
+    background: url(../images/bac18.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+#num_19 {
+    background: url(../images/bac19.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+#num_20 {
+    background: url(../images/bac20.jpg) no-repeat center #03F;
+    background-size: 100% 100%;
+}
+
+.fixed_r {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: -429px;
+    z-index: 999;
+}
+
+.fixed_r li {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    line-height: 40px;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fixed_r li.on {
+    background: #C00;
+    color: #fff;
+}
+
+.navtop {
+    position: fixed;
+    top: 2px;
+    left: 4%;
+    width: 92%;
+    box-shadow: 2px 2px 4px 1px #111;
+    list-style: none;
+    z-index: 2;
+    border-radius: 10px;
+    background: #222;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+.navtop li {
+    display: block;
+    float: left;
+    padding: 10px 15px;
+    width: 80px;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.navtop li a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.navtop li a:hover {
+    color: #f00;
+    transition: 0.3s all ease;
+}
+
+@media only screen and (max-width:1900px) {
+    .navtop {
+        position: fixed;
+        top: 2px;
+        left: 0;
+        margin-left: 0;
+    }
 }
