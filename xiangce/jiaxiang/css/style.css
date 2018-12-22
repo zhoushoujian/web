@@ -33,7 +33,7 @@ a:hover { color: #FFFFFF; text-decoration: none}
 .kePublic ul li { font-size: 25px; line-height: 46px; font-weight: 100; color: #FFF; }
 .setting { font-weight: 400; display: inline-block; width: 170px; }
 .cursor_example { width: 22%; height: 150px; background: #fec107; display: inline-block; border: 2px solid #FFF; border-radius: 2px; margin: 5px; transition: transform 0.25s ease; }
-.cursor_example img { width: 100%; height: auto; }
+.cursor_example img { width: 100%; height: 165px;; }
 .cursor_example:hover { transform: scale(1.1, 1.1); }
 @media only screen and (max-width:720px){
 	.kePublic{background:#019587;width:100%;padding:5px;}
