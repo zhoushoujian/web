@@ -34,7 +34,7 @@ a{
 	position: absolute;
 	width: 10px;
 	top: 80px;
-	bottom: 0;
+	bottom: 50px;
 	background-color: #ccc;
 	box-shadow: inset 0px 0px 7px -2px #000;
 }
