@@ -2,7 +2,7 @@
 global.logger = require('./logger');
 let cluster = require("cluster"),
     fs = require("fs"),
-    http = require('http'),
+    https = require('https'),
     os = require("os"),
     setting = require('./app/setting'),
     Render = require('./app/render');
@@ -40,7 +40,11 @@ if (cluster.isMaster) {
 
     let i = 0;
     //创建服务器
-    let server = http.createServer(function (req, res) {
+    const options = {
+		key:fs.readFileSync('./zhoushoujian.com.key'),
+		cert:fs.readFileSync('./zhoushoujian.com.pem')
+	}
+    let server = https.createServer(options, function (req, res) {
         res.setHeader("Access-Control-Allow-Origin", "*");
         res.setHeader("Access-Control-Allow-Origin", "*");
         res.setHeader('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
