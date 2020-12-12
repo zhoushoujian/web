@@ -1,302 +1,304 @@
 ﻿<!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta name="keywords" content="">
-<meta name="describtion" content="">
-<title>Webmap</title>
-<link rel="stylesheet" href="css/style1.css">
-<link rel="shortcut icon" href="images/favicon.ico">
-<!--移动端跳转-->
-<script type="text/javascript">
-(function(){
-	var ua=navigator.userAgent.toLowerCase();
-	var bIsIpad=ua.match(/ipad/i)=="ipad";
-	var bIsIphoneOs=ua.match(/iphone os/i)=="iphone os";
-	var bIsAndroid=ua.match(/android/i)=="android";
-	var bIsWM=ua.match(/windows mobile/i)=="windows mobile";
-	if(bIsIpad||bIsIphoneOs||bIsAndroid||bIsWM){
-		window.location.href="./mmap.html"
-		}
-		})();
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="keywords" content="">
+  <meta name="describtion" content="">
+  <title>Webmap</title>
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <!--移动端跳转-->
+  <script type="text/javascript">
+    (function () {
+      var ua = navigator.userAgent.toLowerCase();
+      var bIsIpad = ua.match(/ipad/i) == "ipad";
+      var bIsIphoneOs = ua.match(/iphone os/i) == "iphone os";
+      var bIsAndroid = ua.match(/android/i) == "android";
+      var bIsWM = ua.match(/windows mobile/i) == "windows mobile";
+      if (bIsIpad || bIsIphoneOs || bIsAndroid || bIsWM) {
+        window.location.href = "./mmap.html"
+      }
+    })();
+  </script>
 </head>
 
 <body>
-<h1 align="center">网站地图</h1>
-<!--宽度若低于1000px就会出现滚动条-->
-<div class="container">
-<div class="home">
-<a href="old/index.html" target="_blank">主页旧版本</a>
-<a href="xiangce/jiaxiang/index.html" target="_blank">我的家乡</a>
-<a href="xiangce/xuexiao/sanjiang1.html" target="_blank">我的学校</a>
-<!--这里的直线实质上就是一个宽为3px的div，本想通过border来实现的，但是后来想到还有更简便的方法-->
-<div class="line"></div>
-<a href="xiangce/xuexiao/sanjiang2.html" target="_blank">创意版</a>
-<div class="line"></div>
-<a href="xiangce/xuexiao/sanjiang3.html" target="_blank">画册版</a>
-</div>
-  <div class="nanjing">
-	<a href="xiangce/nanjing/index3.html" target="_blank">南京游</a>
-    <!--直线的长度设定-->
-	<div class="longdown"></div>
-	<div class="longline"></div>
-    <!--通过伪元素控制竖直线的margin-left-->
-   <div class="children">
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-   </div>
-   <!--这里需要清除浮动，因为所有的竖直线都是浮动的，没有占据页面空间-->
-	<div style="clear:both;"></div>
-   <div class="items">
-	<a class="mdbtn" href="xiangce/nanjingxiangce/fuzimiao/index.html" target="_blank">夫子庙</a>
-	<a class="mdbtn" href="xiangce/nanjingxiangce/qixiashan/index.html" target="_blank">栖霞山</a>
-	<a class="mdbtn" href="xiangce/nanjingxiangce/xuanwuhu/index.html" target="_blank">玄武湖</a>
-	<a class="mdbtn" href="xiangce/nanjingxiangce/dongwuyuan/index.html" target="_blank">动物园</a>
-	<a class="mdbtn" href="xiangce/nanjingxiangce/zhongshanling/index.html" target="_blank">中山陵</a>
-	<a class="mdbtn" href="xiangce/nanjingxiangce/3Dhuazhan/index.html" target="_blank">3D画展</a>
-	<a class="mdbtn" href="xiangce/nanjingxiangce/zongtongfu/index.html" target="_blank">总统府</a>
-	<a class="mdbtn" href="xiangce/nanjingxiangce/zhenzhuquan/index.html" target="_blank">珍珠泉</a>
-	<a class="mdbtn" href="xiangce/nanjingxiangce/yuhuatai/index.html" target="_blank">雨花台</a>
-	<a class="mdbtn" href="xiangce/nanjingxiangce/yuejianglou/index.html" target="_blank">阅江楼</a>
-   </div>
-  </div>
-  <div class="jiangsu">
-	<a href="xiangce/shengnei/index.html" target="_blank">江苏省内游</a>
-	<div class="longdown"></div>
-	<div class="longline1"></div>
-	<div class="children1">
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	</div>
-	<div style="clear:both;"></div>
-	<div class="items">
-	<a class="mdbtn1" href="xiangce/shengneixiangce/suzhou/index.html" target="_blank">苏州</a>
-	<a class="mdbtn1" href="xiangce/shengneixiangce/wuxi/index.html" target="_blank">无锡</a>
-	<a class="mdbtn1" href="xiangce/shengneixiangce/yangzhou/index.html" target="_blank">扬州</a>
-	<a class="mdbtn1" href="xiangce/shengneixiangce/zhenjiang/index.html" target="_blank">镇江</a>
-	<a class="mdbtn1" href="xiangce/shengneixiangce/changzhou/index.html" target="_blank">常州</a>
-	<a class="mdbtn1" href="xiangce/shengneixiangce/lianyungang/index.html" target="_blank">连云港</a>
-	<a class="mdbtn1" href="xiangce/shengneixiangce/xuzhou/index.html" target="_blank">徐州</a>
-	</div>
-  </div>
-  <div class="shengwai">
-	<a href="xiangce/shengwai/index.html" target="_blank">省外游</a>
-	<div class="longdown"></div>
-	<div class="longline2"></div>
-   <div class="children2">
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-   </div>
-	<div style="clear:both;"></div>
-   <div class="items">
-	<a class="mdbtn2" href="xiangce/shengwaixiangce/guilin/index.html" target="_blank">桂林</a>
-	<a class="mdbtn2" href="xiangce/shengwaixiangce/sanqingshan/index.html" target="_blank">上饶</a>
-	<a class="mdbtn2" href="xiangce/shengwaixiangce/haerbin/index.html" target="_blank">哈尔滨</a>
-	<a class="mdbtn2" href="xiangce/shengwaixiangce/beijing/index.html" target="_blank">北京</a>
-	<a class="mdbtn2" href="xiangce/shengwaixiangce/zhangjiajie/index.html" target="_blank">张家界</a>
-	<a class="mdbtn2" href="xiangce/shengwaixiangce/wuhan/index.html" target="_blank">武汉</a>
-	<a class="mdbtn2" href="xiangce/shengwaixiangce/caishiji/index.html" target="_blank">马鞍山</a>
-	<a class="mdbtn2" href="xiangce/shengwaixiangce/xitang/index.html" target="_blank">嘉兴</a>
-	<a class="mdbtn2" href="xiangce/shengwaixiangce/zaozhuang/index.html" target="_blank">枣庄</a>
-	<a class="mdbtn2" href="xiangce/shengwaixiangce/huangshan/index.html" target="_blank">黄山</a>
-	<a class="mdbtn2" href="xiangce/shengwaixiangce/qingdao/index.html" target="_blank">青岛</a>
-	<a class="mdbtn2" href="xiangce/shengwaixiangce/taishan/index.html" target="_blank">泰安</a>
-	<a class="mdbtn2" href="xiangce/shengwaixiangce/shanghai/index.html" target="_blank">上海</a>
-	<a class="mdbtn2" href="xiangce/shengwaixiangce/xihu/index.html" target="_blank">杭州</a>
-   </div>
-  </div>
-  <div class="changzhou">
-	<a href="xiangce/changzhou/index.html" target="_blank">在常州</a>
-	<div class="longdown"></div>
-	<div class="longline6"></div>
-	<div class="children6">
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	</div>
-	<div style="clear:both;"></div>
-	<div class="items">
-	<a class="mdbtn6" href="xiangce/changzhou/hongmei/index.html" target="_blank">红梅公园</a>
-	<a class="mdbtn6" href="xiangce/changzhou/bowuguan/index.html" target="_blank">常州博物馆</a>
-	<a class="mdbtn6" href="xiangce/changzhou/zijing/index.html" target="_blank">紫荆公园</a>
-	<a class="mdbtn6" href="xiangce/changzhou/konglongyuan/index.html" target="_blank">中华恐龙园</a>
-	<a class="mdbtn6" href="xiangce/changzhou/qingfeng/index.html" target="_blank">青峰公园</a>
-	<a class="mdbtn6" href="xiangce/changzhou/jingchuang/index.html" target="_blank">荆川公园</a>
-	</div>
-  </div>
-  <div class="huiyilu">
-	<a href="daxue/index.html" target="_blank">大学回忆录</a>
-	<div class="longdown"></div>
-	<div class="longline1"></div>
-	<div class="children1">
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	</div>
-	<div style="clear:both;"></div>
-	<div class="items">
-	<a class="mdbtn3" href="daxue/huiyilu.html" target="_blank">大学生涯总论</a>
-	<a class="mdbtn3" href="daxue/naxieshi.html" target="_blank">大学必做之事</a>
-	<a class="mdbtn3" href="daxue/shunjian.html" target="_blank">难忘的瞬间</a>
-	<a class="mdbtn3" href="daxue/dianliang.html" target="_blank">我的旅游报告</a>
-	<a class="mdbtn3" href="daxue/works.html" target="_blank">我的作品集</a>
-	<a class="mdbtn3" href="daxue/young.html" target="_blank">青春的映画</a>
-	<a class="mdbtn3" href="daxue/school.html" target="_blank">学校依旧美</a>
-	</div>
-  </div>
+  <h1 align="center">网站地图</h1>
+  <!--宽度若低于1000px就会出现滚动条-->
+  <div class="container">
+    <div class="home">
+      <a href="old/index.html" target="_blank">主页旧版本</a>
+      <a href="xiangce/jiaxiang/index.html" target="_blank">我的家乡</a>
+      <a href="xiangce/xuexiao/sanjiang1.html" target="_blank">我的学校</a>
+      <!--这里的直线实质上就是一个宽为3px的div，本想通过border来实现的，但是后来想到还有更简便的方法-->
+      <div class="line"></div>
+      <a href="xiangce/xuexiao/sanjiang2.html" target="_blank">创意版</a>
+      <div class="line"></div>
+      <a href="xiangce/xuexiao/sanjiang3.html" target="_blank">画册版</a>
+    </div>
+    <div class="nanjing">
+      <a href="xiangce/nanjing/index3.html" target="_blank">南京游</a>
+      <!--直线的长度设定-->
+      <div class="longdown"></div>
+      <div class="longline"></div>
+      <!--通过伪元素控制竖直线的margin-left-->
+      <div class="children">
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+      </div>
+      <!--这里需要清除浮动，因为所有的竖直线都是浮动的，没有占据页面空间-->
+      <div style="clear:both;"></div>
+      <div class="items">
+        <a class="mdbtn" href="xiangce/nanjingxiangce/fuzimiao/index.html" target="_blank">夫子庙</a>
+        <a class="mdbtn" href="xiangce/nanjingxiangce/qixiashan/index.html" target="_blank">栖霞山</a>
+        <a class="mdbtn" href="xiangce/nanjingxiangce/xuanwuhu/index.html" target="_blank">玄武湖</a>
+        <a class="mdbtn" href="xiangce/nanjingxiangce/dongwuyuan/index.html" target="_blank">动物园</a>
+        <a class="mdbtn" href="xiangce/nanjingxiangce/zhongshanling/index.html" target="_blank">中山陵</a>
+        <a class="mdbtn" href="xiangce/nanjingxiangce/3Dhuazhan/index.html" target="_blank">3D画展</a>
+        <a class="mdbtn" href="xiangce/nanjingxiangce/zongtongfu/index.html" target="_blank">总统府</a>
+        <a class="mdbtn" href="xiangce/nanjingxiangce/zhenzhuquan/index.html" target="_blank">珍珠泉</a>
+        <a class="mdbtn" href="xiangce/nanjingxiangce/yuhuatai/index.html" target="_blank">雨花台</a>
+        <a class="mdbtn" href="xiangce/nanjingxiangce/yuejianglou/index.html" target="_blank">阅江楼</a>
+      </div>
+    </div>
+    <div class="jiangsu">
+      <a href="xiangce/shengnei/index.html" target="_blank">江苏省内游</a>
+      <div class="longdown"></div>
+      <div class="longline1"></div>
+      <div class="children1">
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="items">
+        <a class="mdbtn1" href="xiangce/shengneixiangce/suzhou/index.html" target="_blank">苏州</a>
+        <a class="mdbtn1" href="xiangce/shengneixiangce/wuxi/index.html" target="_blank">无锡</a>
+        <a class="mdbtn1" href="xiangce/shengneixiangce/yangzhou/index.html" target="_blank">扬州</a>
+        <a class="mdbtn1" href="xiangce/shengneixiangce/zhenjiang/index.html" target="_blank">镇江</a>
+        <a class="mdbtn1" href="xiangce/shengneixiangce/changzhou/index.html" target="_blank">常州</a>
+        <a class="mdbtn1" href="xiangce/shengneixiangce/lianyungang/index.html" target="_blank">连云港</a>
+        <a class="mdbtn1" href="xiangce/shengneixiangce/xuzhou/index.html" target="_blank">徐州</a>
+      </div>
+    </div>
+    <div class="shengwai">
+      <a href="xiangce/shengwai/index.html" target="_blank">省外游</a>
+      <div class="longdown"></div>
+      <div class="longline2"></div>
+      <div class="children2">
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="items">
+        <a class="mdbtn2" href="xiangce/shengwaixiangce/guilin/index.html" target="_blank">桂林</a>
+        <a class="mdbtn2" href="xiangce/shengwaixiangce/sanqingshan/index.html" target="_blank">上饶</a>
+        <a class="mdbtn2" href="xiangce/shengwaixiangce/haerbin/index.html" target="_blank">哈尔滨</a>
+        <a class="mdbtn2" href="xiangce/shengwaixiangce/beijing/index.html" target="_blank">北京</a>
+        <a class="mdbtn2" href="xiangce/shengwaixiangce/zhangjiajie/index.html" target="_blank">张家界</a>
+        <a class="mdbtn2" href="xiangce/shengwaixiangce/wuhan/index.html" target="_blank">武汉</a>
+        <a class="mdbtn2" href="xiangce/shengwaixiangce/caishiji/index.html" target="_blank">马鞍山</a>
+        <a class="mdbtn2" href="xiangce/shengwaixiangce/xitang/index.html" target="_blank">嘉兴</a>
+        <a class="mdbtn2" href="xiangce/shengwaixiangce/zaozhuang/index.html" target="_blank">枣庄</a>
+        <a class="mdbtn2" href="xiangce/shengwaixiangce/huangshan/index.html" target="_blank">黄山</a>
+        <a class="mdbtn2" href="xiangce/shengwaixiangce/qingdao/index.html" target="_blank">青岛</a>
+        <a class="mdbtn2" href="xiangce/shengwaixiangce/taishan/index.html" target="_blank">泰安</a>
+        <a class="mdbtn2" href="xiangce/shengwaixiangce/shanghai/index.html" target="_blank">上海</a>
+        <a class="mdbtn2" href="xiangce/shengwaixiangce/xihu/index.html" target="_blank">杭州</a>
+      </div>
+    </div>
+    <div class="changzhou">
+      <a href="xiangce/changzhou/index.html" target="_blank">在常州</a>
+      <div class="longdown"></div>
+      <div class="longline6"></div>
+      <div class="children6">
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="items">
+        <a class="mdbtn6" href="xiangce/changzhou/hongmei/index.html" target="_blank">红梅公园</a>
+        <a class="mdbtn6" href="xiangce/changzhou/bowuguan/index.html" target="_blank">常州博物馆</a>
+        <a class="mdbtn6" href="xiangce/changzhou/zijing/index.html" target="_blank">紫荆公园</a>
+        <a class="mdbtn6" href="xiangce/changzhou/konglongyuan/index.html" target="_blank">中华恐龙园</a>
+        <a class="mdbtn6" href="xiangce/changzhou/qingfeng/index.html" target="_blank">青峰公园</a>
+        <a class="mdbtn6" href="xiangce/changzhou/jingchuang/index.html" target="_blank">荆川公园</a>
+      </div>
+    </div>
+    <div class="huiyilu">
+      <a href="daxue/index.html" target="_blank">大学回忆录</a>
+      <div class="longdown"></div>
+      <div class="longline1"></div>
+      <div class="children1">
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="items">
+        <a class="mdbtn3" href="daxue/huiyilu.html" target="_blank">大学生涯总论</a>
+        <a class="mdbtn3" href="daxue/naxieshi.html" target="_blank">大学必做之事</a>
+        <a class="mdbtn3" href="daxue/shunjian.html" target="_blank">难忘的瞬间</a>
+        <a class="mdbtn3" href="daxue/dianliang.html" target="_blank">我的旅游报告</a>
+        <a class="mdbtn3" href="daxue/works.html" target="_blank">我的作品集</a>
+        <a class="mdbtn3" href="daxue/young.html" target="_blank">青春的映画</a>
+        <a class="mdbtn3" href="daxue/school.html" target="_blank">学校依旧美</a>
+      </div>
+    </div>
     <div class="othersite">
-	<a href="javascript:void(0);">我的其他站点</a>
-	<div class="longdown"></div>
-	<div class="longline4"></div>
-	<div class="children4">
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	</div>
-	<div style="clear:both;"></div>
-	<div class="items">
-	<a class="mdbtn4" href="http://blog.zhoushoujian.com" target="_blank">我的博客</a>
-	<a class="mdbtn4" href="http://www.2126057.cn" target="_blank">快捷导航</a>
-	<a class="mdbtn4" href="http://www.19920212.top" target="_blank">美女写真</a>
-	</div>
-  </div>
-  <div class="goodlinks">
-	<a href="javascript:void(0);">好链推荐</a>
-	<div class="longdown"></div>
-	<div class="longline1"></div>
-	<div class="children1">
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	<div class="down"></div>
-	</div>
-	<div style="clear:both;"></div>
-	<div class="items">
-	<a class="mdbtn5" href="qingrenjie/wishes.htm" target="_blank">情人节快乐</a>
-	<a class="mdbtn5" href="mid-autumn/index.html" target="_blank">中秋节快乐</a>
-	<a class="mdbtn5" href="guoq/index.html" target="_blank">国庆节快乐</a>
-	<a class="mdbtn5" href="pinganye/index.html" target="_blank">平安夜幸福</a>
-	<a class="mdbtn5" href="chunjie/index.html" target="_blank">新春快乐</a>
-	<a class="mdbtn5" href="ball-pool/index.html" target="_blank">开心一刻</a>
-	<a class="mdbtn5" href="Art/index.html" target="_blank">艺术欣赏</a>
-	</div>
-  </div>
-  <br><br><br>
-<!--chart.js可视化图表的简单应用，大数据时代必须要学会分析和总结数据-->
-<script src="js/chart.js"></script>
-	<div class="chart-container">
-		<canvas id="myChart"></canvas>
-		</div>
-<script>
-var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'bar',
+      <a href="javascript:void(0);">我的其他站点</a>
+      <div class="longdown"></div>
+      <div class="longline4"></div>
+      <div class="children4">
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="items">
+        <a class="mdbtn4" href="http://blog.zhoushoujian.com" target="_blank">我的博客</a>
+        <a class="mdbtn4" href="http://www.2126057.cn" target="_blank">快捷导航</a>
+        <a class="mdbtn4" href="http://www.19920212.top" target="_blank">美女写真</a>
+      </div>
+    </div>
+    <div class="goodlinks">
+      <a href="javascript:void(0);">好链推荐</a>
+      <div class="longdown"></div>
+      <div class="longline1"></div>
+      <div class="children1">
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+        <div class="down"></div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="items">
+        <a class="mdbtn5" href="qingrenjie/wishes.htm" target="_blank">情人节快乐</a>
+        <a class="mdbtn5" href="mid-autumn/index.html" target="_blank">中秋节快乐</a>
+        <a class="mdbtn5" href="guoq/index.html" target="_blank">国庆节快乐</a>
+        <a class="mdbtn5" href="pinganye/index.html" target="_blank">平安夜幸福</a>
+        <a class="mdbtn5" href="chunjie/index.html" target="_blank">新春快乐</a>
+        <a class="mdbtn5" href="ball-pool/index.html" target="_blank">开心一刻</a>
+        <a class="mdbtn5" href="Art/index.html" target="_blank">艺术欣赏</a>
+      </div>
+    </div>
+    <br><br><br>
+    <!--chart.js可视化图表的简单应用，大数据时代必须要学会分析和总结数据-->
+    <script src="js/chart.js"></script>
+    <div class="chart-container">
+      <canvas id="myChart"></canvas>
+    </div>
+    <script>
+      var ctx = document.getElementById('myChart').getContext('2d');
+      var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'bar',
 
-    // The data for our dataset
-  data: {
-        labels: ["南京游", "省内游", "省外游", "大学回忆录", "我的其他站点", "好链推荐","其他页面"],
-        datasets: [{
+        // The data for our dataset
+        data: {
+          labels: ["南京游", "省内游", "省外游", "大学回忆录", "我的其他站点", "好链推荐", "其他页面"],
+          datasets: [{
             label: '网页页面总数',
-            data: [10, 7, 13, 7, 4, 7,5],
+            data: [10, 7, 13, 7, 4, 7, 5],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)',
-                'rgba(255, 253, 235, 0.2)'
+              'rgba(255, 99, 132, 0.2)',
+              'rgba(54, 162, 235, 0.2)',
+              'rgba(255, 206, 86, 0.2)',
+              'rgba(75, 192, 192, 0.2)',
+              'rgba(153, 102, 255, 0.2)',
+              'rgba(255, 159, 64, 0.2)',
+              'rgba(255, 253, 235, 0.2)'
             ],
             borderColor: [
-                'rgba(255,99,132,1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)',
-                'rgba(255, 253, 235, 1)'
+              'rgba(255,99,132,1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 159, 64, 1)',
+              'rgba(255, 253, 235, 1)'
             ],
-           borderWidth:2
-        }]
-    },
-    options: {
-    	//是否支持响应式
-    	responsive: true,
-    	//在调整大小事件后，以毫秒为单位的动画时间到新大小所需的时间。
-    	responsiveAnimationDuration: 300,
-    	//(width / height)调整大小时保持原始的画布纵横比。
-    	maintainAspectRatio:true,
-    	 legend: {
+            borderWidth: 2
+          }]
+        },
+        options: {
+          //是否支持响应式
+          responsive: true,
+          //在调整大小事件后，以毫秒为单位的动画时间到新大小所需的时间。
+          responsiveAnimationDuration: 300,
+          //(width / height)调整大小时保持原始的画布纵横比。
+          maintainAspectRatio: true,
+          legend: {
             display: true,
             labels: {
-            	//图例字体的颜色
-                fontColor: 'rgba(255, 255, 255,.9)',
-                //彩色盒子之间的填充。
-                padding : 10,
-                //图例彩盒的大小
-                boxWidth : 40
-              }
-           },
-        title: {
+              //图例字体的颜色
+              fontColor: 'rgba(255, 255, 255,.9)',
+              //彩色盒子之间的填充。
+              padding: 10,
+              //图例彩盒的大小
+              boxWidth: 40
+            }
+          },
+          title: {
             display: true,
             text: '本站的网页页面结构条形统计图',
             position: 'top',
-            fontSize : 24 ,
-            fontFamily : 'Helvetica' ,
-            fontColor : 'rgba(255,255,255,1)',
-            fontStyle : 'bold'
-           } ,
-        scales: {
-        	//在y轴上堆叠
+            fontSize: 24,
+            fontFamily: 'Helvetica',
+            fontColor: 'rgba(255,255,255,1)',
+            fontStyle: 'bold'
+          },
+          scales: {
+            //在y轴上堆叠
             yAxes: [{
-            	stacked: true,
-                gridLines: {display: true,color: "rgba(255,99,132,0.5)"},
-                ticks: {beginAtZero:true}
-            }]  	
+              stacked: true,
+              gridLines: { display: true, color: "rgba(255,99,132,0.5)" },
+              ticks: { beginAtZero: true }
+            }]
+          }
         }
-    }
-});
-</script>
-<p style="text-align:center;color:#e8e8e8">&copy copyright@2017 www.zhoushoujian.com </p>
-</div>
+      });
+    </script>
+    <p style="text-align:center;color:#e8e8e8">&copy copyright@2017 www.zhoushoujian.com </p>
+  </div>
 </body>
+
 </html>
