@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[73],{507:function(n,o,e){"use strict";e.r(o),e.d(o,"default",function(){return s});var t=e(0),i=e.n(t);class s extends i.a.Component{componentDidMount(){window.SELF=this,goRoute(this,"/main/home")}render(){return null}}}}]);
