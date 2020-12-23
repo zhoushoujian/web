@@ -467,7 +467,7 @@ color: #FF0000;
   .fh5co-section-map{
 	right:0;
 	left:90%;
-  bottom:0;   
+  bottom:0;
   visibility:hidden;
 }
 }
@@ -602,4 +602,45 @@ color: #FF0000;
   background: url(../images/move-top.png) no-repeat 0px 0px;
   z-index:999;
   cursor:pointer;
+}
+
+.STYLE1 {
+	font-size: 24px
+}
+
+.STYLE2 {
+	color: #FF0000
+}
+
+.STYLE3 {
+	color: #00FF00
+}
+
+.STYLE4 {
+	color: #0000FF
+}
+
+.STYLE5 {
+	color: #FFFF00
+}
+
+.STYLE6 {
+	color: #00FFFF
+}
+
+.STYLE7 {
+	color: #FF00FF
+}
+
+.STYLE8 {
+	color: #666666
+}
+
+.STYLE13 {
+	color: #999999;
+	font-size: 24px;
+}
+
+.STYLE14 {
+	font-size: 32px
 }
