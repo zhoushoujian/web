@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="keywords" content="平安夜，圣诞节，祝福，周守俭，zhoushoujian，网页作品">
+    <meta name="description" content="平安夜幸福，圣诞节快乐！祝大家节日快乐！我的作品，欢迎欣赏！">
+    <title>平安夜幸福，圣诞节快乐！</title>
+    <link rel="stylesheet" type="text/css" href="css/txt.wav.css">
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=wqBXfIN3HkpM1AHKWujjCdsi"></script>
+    <script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            text-align: center;
+            height: 270px;
+            overflow: hidden;
+            background-color: #000000;
+            background-image: url(deng.gif);
+        }
+
+        p {
+            font-size: 1em;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 1.2em;
+            color: #FFFFFF;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            ;
+            color: #FFF;
+            text-align: center;
+            padding-top: 285px;
+        }
+
+        h4 {
+            font-size: 1em;
+            ;
+            color: #FFFFFF;
+            margin-top: 20px;
+        }
+
+        h5 {
+            color: #FFFFFF;
+            text-align: left;
+            padding-top: 5px;
+        }
+
+        #allmap {
+            width: 100%;
+            height: 265px;
+            position: absolute;
+        }
+
+        a:link {
+            color: #FF0000;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #FF0000;
+        }
+
+        .keleyilcd {
+            background-color: black;
+            color: yellow;
+            font: bold 18px MS Sans Serif;
+            padding: 3px;
+        }
+
+        .keleyilcd sup {
+            font-size: 80%;
+        }
+
+        @media screen and (max-width:640px) {
+            .no-mobile {
+                display: none
+            }
+        }
+
+        @media screen and (min-width:640px) {
+            .site {
+                display: none
+            }
+        }
+    </style>
+
+    <script type="text/javascript">
+        function cdtime(container, targetdate) {
+            if (!document.getElementById || !document.getElementById(container)) return
+            this.container = document.getElementById(container)
+            this.currentTime = new Date()
+            this.targetdate = new Date(targetdate)
+            this.timesup = false
+            this.updateTime()
+        }
+        cdtime.prototype.updateTime = function () {
+            var thisobj = this
+            this.currentTime.setSeconds(this.currentTime.getSeconds() + 1)
+            setTimeout(function () { thisobj.updateTime() }, 1000) //update time every second
+        }
+        cdtime.prototype.displaycountdown = function (baseunit, functionref) {
+            this.baseunit = baseunit
+            this.formatresults = functionref
+            this.showresults()
+        }
+        cdtime.prototype.showresults = function () {
+            var thisobj = this
+            var timediff = (this.targetdate - this.currentTime) / 1000
+            if (timediff < 0) { //if time is up keleyi.com
+                this.timesup = true
+                this.container.innerHTML = this.formatresults()
+                return
+            }
+            var oneMinute = 60
+            var oneHour = 60 * 60
+            var oneDay = 60 * 60 * 24
+            var dayfield = Math.floor(timediff / oneDay)
+            var hourfield = Math.floor((timediff - dayfield * oneDay) / oneHour)
+            var minutefield = Math.floor((timediff - dayfield * oneDay - hourfield * oneHour) / oneMinute)
+            var secondfield = Math.floor((timediff - dayfield * oneDay - hourfield * oneHour - minutefield * oneMinute))
+            if (this.baseunit == "hours") {
+                hourfield = dayfield * 24 + hourfield
+                dayfield = "n/a"
+            }
+            else if (this.baseunit == "minutes") {
+                minutefield = dayfield * 24 * 60 + hourfield * 60 + minutefield
+                dayfield = hourfield = "n/a"
+            }
+            else if (this.baseunit == "seconds") {
+                var secondfield = timediff
+                dayfield = hourfield = minutefield = "n/a"
+            }
+            this.container.innerHTML = this.formatresults(dayfield, hourfield, minutefield, secondfield)
+            setTimeout(function () { thisobj.showresults() }, 1000) //update results every second
+        }
+        function formatresults() {
+            if (this.timesup == false) {
+                var displaystring = arguments[0] + " days " + arguments[1] + " hours " + arguments[2] + " minutes " + arguments[3] + " seconds left"
+            }
+            else {
+                var displaystring = "倒计时:"
+            }
+            return displaystring
+        }
+        function formatresults2() {
+            if (this.timesup == false) {
+                var displaystring = " 离平安夜还有<span class='kel" + "eyilcd'>" + arguments[0] + " <sup>天</sup> " + arguments[1] + " <sup>时</sup> " + arguments[2] + " <sup>分</sup> " + arguments[3] + " <sup>秒</sup></span>"
+            }
+            else {
+                var displaystring = ""
+                alert("Christmas is here!")
+            }
+            return displaystring
+        }
+    </script>
+
+</head>
+
+<body>
+    <p class="no-mobile">亲，请用手机打开这个网页，用电脑是领不到祝福的哦！( ^_^ )</p>
+    <div class="site">
+        <h4>您的具体位置为(地图可缩放):</h4>
+        <div id="allmap"></div>
+        <script type="text/javascript">
+            $(function () {
+
+                if (supportsGeoLocation()) {
+
+                } else {
+                    alert("不支持 GeoLocation.")
+                }
+                // 检测浏览器是否支持HTML5
+                function supportsGeoLocation() {
+                    return !!navigator.geolocation;
+                }
+                // 单次位置请求执行的函数             
+                function getLocation() {
+                    navigator.geolocation.getCurrentPosition(mapIt, locationError);
+                }
+                //定位成功时，执行的函数
+                function mapIt(position) {
+                    var lon = position.coords.longitude;
+                    var lat = position.coords.latitude;
+                    // alert("您位置的经度是："+lon+" 纬度是："+lat);
+                    var map = new BMap.Map("allmap");
+                    var point = new BMap.Point("" + lon + "", "" + lat + "");
+                    map.centerAndZoom(point, 19);
+                    var gc = new BMap.Geocoder();
+                    translateCallback = function (point) {
+                        var marker = new BMap.Marker(point);
+                        map.addOverlay(marker);
+                        map.setCenter(point);
+                        gc.getLocation(point, function (rs) {
+                            var addComp = rs.addressComponents;
+                            if (addComp.province !== addComp.city) {
+                                var sContent =
+                                    "<div>" +
+                                    "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>" + addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber + "</p>" +
+                                    "</div>";
+                            }
+                            else {
+                                var sContent =
+                                    "<div>" +
+                                    "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>" + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber + "</p>" +
+                                    "</div>";
+                            }
+
+                        });
+                    }
+                    BMap.Convertor.translate(point, 0, translateCallback);
+                }
+                // 定位失败时，执行的函数
+                function locationError(error) {
+                    switch (error.code) {
+                        case error.PERMISSION_DENIED:
+                            alert("系统拒绝了程序获取您的定位，定位获取失败");
+                            break;
+                        case error.POSITION_UNAVAILABLE:
+                            alert("定位信息不可用");
+                            break;
+                        case error.TIMEOUT:
+                            alert("请求超时");
+                            break;
+                        case error.UNKNOWN_ERROR:
+                            alert("发生一个未知错误");
+                            break;
+                    }
+                }
+                // 页面加载时执行getLocation函数
+                window.onload = getLocation;
+            })
+        </script>
+        <div class="txtwav bounce">
+            <h3><a
+                    href="works.html"><span>点</span><span>击</span><span>领</span><span>取</span><span>祝</span><span>福</span></a>
+            </h3>
+        </div>
+        <h5>关于设计:<br>
+            1.根据ip对页面的访问量进行计数，一个ip只能领取一次祝福<br>
+            2.不再使用ip定位，这次使用定位精度更高的GPS+百度地图<br>
+            3.页面只能由手机打开，屏蔽电脑对网页的访问
+        </h5>
+        <div id="countdowncontainer" style="display:none;"></div>
+        <div id="countdowncontainer2" style="color: #fff;float: right;"></div>
+        <script type="text/javascript">
+            var futuredate = new cdtime("countdowncontainer", "December 24, 2017 00:00:00")
+            futuredate.displaycountdown("days", formatresults)
+            var currentyear = new Date().getFullYear()
+            var thischristmasyear = (new Date().getMonth() >= 11 && new Date().getDate() > 24) ? currentyear + 1 : currentyear
+            var christmas = new cdtime("countdowncontainer2", "December 24, " + thischristmasyear + " 0:0:00")
+            christmas.displaycountdown("days", formatresults2)
+        </script>
+    </div>
+</body>
+
+</html>
