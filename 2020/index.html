@@ -26,8 +26,9 @@
 				<div class="cntl-state cntl-animate">
 					<div class="cntl-content">
 						<h4>写在前面</h4>
+						<a href="https://www.zhoushoujian.com" style="font-size:15px;" target="_blank">旅游相册已更新,详情戳这里</a>
 						<p>
-							<span style="color:#969696;font-size:15px;">本年度依旧采用时光轴加多图合成的方式阐述。</span>
+							<span style="color:#969696;font-size:15px;">本年度依旧采用时光轴+多图合成的方式阐述</span>
 							<br /><br />
 							旧的一年即将过去，又到总结的时候了.
 							<br /><br />
@@ -703,58 +704,60 @@
 
 	</div>
 
-	<a id="toTop" onclick="btn();" style="display: none;">
-		<div class="bottom">
-			<p>往期回忆录：<span>
-					<a target="_blank" href="http://www.zhoushoujian.com/2019/index.html">2019回忆录</a>&nbsp;&nbsp;
-					<a target="_blank" href="http://www.zhoushoujian.com/2018/index.html">2018回忆录</a>&nbsp;&nbsp;
-					<a target="_blank" href="http://www.zhoushoujian.com/2017/index.html">2017回忆录</a>&nbsp;&nbsp;
-					<a target="_blank" href="http://b.eqxiu.com/s/M1yuCsTv?eqrcode=1">2016回忆录</a>&nbsp;&nbsp;
-					<a target="_blank" href="../2015/2015.exe">2015回忆录</a></span></p>
-			<p style="font-size:14px;color:#969696;">powered by &nbsp;<a
-					href="http://www.zhoushoujian.com/">www.zhoushoujian.com</p>
-		</div>
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script src="./js/jquery.lazyload.min.js"></script>
-		<script type="text/javascript" src="lib/jquery.cntl.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function (e) {
-				// $('.cntl').cntl({
-				// 	revealbefore: 0,
-				// 	anim_class: 'cntl-animate',
-				// 	onreveal: function (e) {
-				// 		console.log(e);
-				// 	}
-				// });
-				$("img").lazyload({
-					threshold: 520
-				});
+	<a id="toTop" onclick="btn();" style="display: none;"></a>
+	<div class="bottom">
+		<p>
+			<strong>往期：</strong>
+			<a target="_blank" href="https://www.zhoushoujian.com/2019/index.html">2019回忆录</a>&nbsp;&nbsp;
+			<a target="_blank" href="https://www.zhoushoujian.com/2018/index.html">2018回忆录</a>&nbsp;&nbsp;
+			<a target="_blank" href="https://www.zhoushoujian.com/2017/index.html">2017回忆录</a>&nbsp;&nbsp;
+			<a target="_blank" href="http://b.eqxiu.com/s/M1yuCsTv?eqrcode=1">2016回忆录</a>&nbsp;&nbsp;
+			<a target="_blank" href="../2015/2015.exe">2015回忆录</a>
+		</p>
+		<p style="font-size:14px;color:#969696;">powered by &nbsp;<a
+				href="https://www.zhoushoujian.com/">www.zhoushoujian.com</p>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="./js/jquery.lazyload.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.cntl.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function (e) {
+			// $('.cntl').cntl({
+			// 	revealbefore: 0,
+			// 	anim_class: 'cntl-animate',
+			// 	onreveal: function (e) {
+			// 		console.log(e);
+			// 	}
+			// });
+			$("img").lazyload({
+				threshold: 520
 			});
+		});
 
-			//toTop
-			var obtn = document.getElementById('toTop'); //获取id名为toTop的元素
-			console.log("obtn", obtn)
-			var clientHeight = document.documentElement.clientHeight; //获取页面可视区的高度
-			window.onscroll = function () { //滚动条滚动时触发
-				var osTopScroll = document.documentElement.scrollTop || document.body.scrollTop;
-				if (osTopScroll >= clientHeight) { //当距离顶部高度大于可视区时
-					obtn.style.display = 'block'; //按钮显示
-				} else {
-					obtn.style.display = 'none'; //否则按钮隐藏+
+		//toTop
+		var obtn = document.getElementById('toTop'); //获取id名为toTop的元素
+		console.log("obtn", obtn)
+		var clientHeight = document.documentElement.clientHeight; //获取页面可视区的高度
+		window.onscroll = function () { //滚动条滚动时触发
+			var osTopScroll = document.documentElement.scrollTop || document.body.scrollTop;
+			if (osTopScroll >= clientHeight) { //当距离顶部高度大于可视区时
+				obtn.style.display = 'block'; //按钮显示
+			} else {
+				obtn.style.display = 'none'; //否则按钮隐藏+
+			}
+		};
+
+		function btn() {
+			timer = setInterval(function () { //设立定时器
+				var osTop = document.documentElement.scrollTop || document.body.scrollTop; // 获取滚动条距离顶部的高度
+				var ispeed = Math.floor(-osTop / 5); ///每次向上滚动的距离
+				document.documentElement.scrollTop = document.body.scrollTop = osTop + ispeed; //每次距离顶部的距离
+				if (osTop <= 0) {
+					clearInterval(timer); //清除定时器
 				}
-			};
-
-			function btn() {
-				timer = setInterval(function () { //设立定时器
-					var osTop = document.documentElement.scrollTop || document.body.scrollTop; // 获取滚动条距离顶部的高度
-					var ispeed = Math.floor(-osTop / 5); ///每次向上滚动的距离
-					document.documentElement.scrollTop = document.body.scrollTop = osTop + ispeed; //每次距离顶部的距离
-					if (osTop <= 0) {
-						clearInterval(timer); //清除定时器
-					}
-				}, 30); //定时器每30ms执行一次
-			};
-		</script>
+			}, 30); //定时器每30ms执行一次
+		};
+	</script>
 </body>
 
 </html>
