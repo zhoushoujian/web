@@ -220,7 +220,8 @@
 							<h4>04.29</h4>
 							<p>
 								今天我们公司项目迭代，而我的项目今天也顺利迭代。
-								全新项目技术栈为cordova(C), nodejs(N), express(E), react(R), redux(RX), less(L), mongodb(M), jwt(T)
+								全新项目技术栈为cordova(C), nodejs(N), express(E), react(R), redux(RX), less(L), mongodb(M),
+								jwt(T)
 							</p>
 						</div>
 						<div class="cntl-image"><img data-original="img/04.29.png"></div>
@@ -614,55 +615,56 @@
 	</div>
 
 	<a id="toTop" onclick="btn();" style="display: none;">
-	<div class="bottom">
-		<p>友情链接：<span>
-				<a href="http://www.zhoushoujian.com/2018/index.htm" >2018回忆录&nbsp;&nbsp;
-				<a href="http://www.zhoushoujian.com/2017/index.htm" >2017回忆录&nbsp;&nbsp;
-				<a href="http://b.eqxiu.com/s/M1yuCsTv?eqrcode=1" >2016回忆录&nbsp;&nbsp;
-				<a href="http://www.2126057.cn/www/2017/2015.exe" >2015回忆录</span></p>
-		<p style="font-size:14px;color:#969696;">powered by &nbsp;<a href="http://www.zhoushoujian.com/" >www.zhoushoujian.com</p>
-	</div>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script src="./js/jquery.lazyload.min.js"></script>
-	<script type="text/javascript" src="lib/jquery.cntl.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function (e) {
-			// $('.cntl').cntl({
-			// 	revealbefore: 0,
-			// 	anim_class: 'cntl-animate',
-			// 	onreveal: function (e) {
-			// 		console.log(e);
-			// 	}
-			// });
-			$("img").lazyload({
-				threshold: 520
+		<div class="bottom">
+			<p>友情链接：<span>
+					<a href="http://www.zhoushoujian.com/2018/index.htm">2018回忆录</a>&nbsp;&nbsp;
+					<a href="http://www.zhoushoujian.com/2017/index.htm">2017回忆录</a>&nbsp;&nbsp;
+					<a href="http://b.eqxiu.com/s/M1yuCsTv?eqrcode=1">2016回忆录</a>&nbsp;&nbsp;
+					<a href="../2015/2015.exe">2015回忆录</a></span></p>
+			<p style="font-size:14px;color:#969696;">powered by &nbsp;<a
+					href="http://www.zhoushoujian.com/">www.zhoushoujian.com</p>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="./js/jquery.lazyload.min.js"></script>
+		<script type="text/javascript" src="lib/jquery.cntl.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function (e) {
+				// $('.cntl').cntl({
+				// 	revealbefore: 0,
+				// 	anim_class: 'cntl-animate',
+				// 	onreveal: function (e) {
+				// 		console.log(e);
+				// 	}
+				// });
+				$("img").lazyload({
+					threshold: 520
+				});
 			});
-		});
 
-		//toTop
-		var obtn = document.getElementById('toTop'); //获取id名为toTop的元素
-		console.log("obtn", obtn)
-		var clientHeight = document.documentElement.clientHeight; //获取页面可视区的高度
-		window.onscroll = function () { //滚动条滚动时触发
-			var osTopScroll = document.documentElement.scrollTop || document.body.scrollTop;
-			if (osTopScroll >= clientHeight) { //当距离顶部高度大于可视区时
-				obtn.style.display = 'block'; //按钮显示
-			} else {
-				obtn.style.display = 'none'; //否则按钮隐藏+
-			}
-		};
-
-		function btn() {
-			timer = setInterval(function () { //设立定时器
-				var osTop = document.documentElement.scrollTop || document.body.scrollTop; // 获取滚动条距离顶部的高度
-				var ispeed = Math.floor(-osTop / 5); ///每次向上滚动的距离
-				document.documentElement.scrollTop = document.body.scrollTop = osTop + ispeed; //每次距离顶部的距离
-				if (osTop <= 0) {
-					clearInterval(timer); //清除定时器
+			//toTop
+			var obtn = document.getElementById('toTop'); //获取id名为toTop的元素
+			console.log("obtn", obtn)
+			var clientHeight = document.documentElement.clientHeight; //获取页面可视区的高度
+			window.onscroll = function () { //滚动条滚动时触发
+				var osTopScroll = document.documentElement.scrollTop || document.body.scrollTop;
+				if (osTopScroll >= clientHeight) { //当距离顶部高度大于可视区时
+					obtn.style.display = 'block'; //按钮显示
+				} else {
+					obtn.style.display = 'none'; //否则按钮隐藏+
 				}
-			}, 30); //定时器每30ms执行一次
-		};
-	</script>
+			};
+
+			function btn() {
+				timer = setInterval(function () { //设立定时器
+					var osTop = document.documentElement.scrollTop || document.body.scrollTop; // 获取滚动条距离顶部的高度
+					var ispeed = Math.floor(-osTop / 5); ///每次向上滚动的距离
+					document.documentElement.scrollTop = document.body.scrollTop = osTop + ispeed; //每次距离顶部的距离
+					if (osTop <= 0) {
+						clearInterval(timer); //清除定时器
+					}
+				}, 30); //定时器每30ms执行一次
+			};
+		</script>
 </body>
 
 </html>
