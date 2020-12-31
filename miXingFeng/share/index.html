@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no, shrink-to-fit=no,">
+	<meta name="theme-color" content="#000000">
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<style>
+		@keyframes flickerAnimation {
+			0%   { opacity:0.8; }
+			50%  { opacity:0.3; }
+			100% { opacity:1; }
+		}
+		@-o-keyframes flickerAnimation{
+			0%   { opacity:0.8; }
+			50%  { opacity:0.3; }
+			100% { opacity:0.8; }
+		}
+		@-moz-keyframes flickerAnimation{
+			0%   { opacity:0.8; }
+			50%  { opacity:0.3; }
+			100% { opacity:0.8; }
+		}
+		@-webkit-keyframes flickerAnimation{
+			0%   { opacity:0.8; }
+			50%  { opacity:0.3; }
+			100% { opacity:0.8; }
+		}
+		.animate-flicker {
+			-webkit-animation: flickerAnimation 2s infinite;
+			-moz-animation: flickerAnimation 2s infinite;
+			-o-animation: flickerAnimation 2s infinite;
+			animation: flickerAnimation 2s infinite;
+		}
+		.loading-text{
+			width: 100%;
+			height:100vh;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			font-weight: 800;
+			font-size: 32px;
+			overflow: hidden;
+			color: #DBDBDB;
+			position: fixed;
+			margin-top: -50px;
+		}
+	</style>
+	<script src="./config.js"></script>
+	<title>欢迎使用觅星峰</title>
+<link href="0.css?f4d71a8674afd9077e75" rel="stylesheet"/></head>
+
+<body>
+    <noscript>
+        You need to enable JavaScript to run this app.
+	</noscript>
+	<script>
+		// cordova-plugin-file 会覆盖下面的两个全局变量，通过浏览器的方式获取md5需要用到这两个全局变量
+		window.BrowserFileReader = window.FileReader
+		window.BrowserFile = window.File
+		window.isCordova = window._cordovaNative;
+		if (window.isCordova) {
+			const scriptCordova = document.createElement("script");
+			scriptCordova.src = "./cordova.js";
+			document.body.appendChild(scriptCordova);
+		};
+	</script>
+	<script src="./utils.js"></script>
+    <div id="root" class="loading-text animate-flicker">觅星峰</div>
+<script src="js/manifest.js?f4d71a8674afd9077e75"></script><script src="js/0.chunk.js?f4d71a86&f4d71a8674afd9077e75"></script><script src="js/1.chunk.js?f4d71a86&f4d71a8674afd9077e75"></script></body>
+<script src="./fastclick.js"></script>
+<script>
+    if ('addEventListener' in document) {
+        document.addEventListener('DOMContentLoaded', function () {
+            FastClick.attach(document.body);
+        }, false);
+    }
+</script>
+</html>
