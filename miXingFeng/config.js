@@ -3,8 +3,8 @@ window.config = {
   host: "localhost",
   port: "8000",
   socketPort: "8000",
-  debug: false,
-  dev: false,
+  debug: false,   //是否启用本机api调试的开关
+  dev: false,   //以前用于是否开启前端debug模式的开关,现在使用用户信息里的role为admin来判断
   domainUrl: "https://api.zhoushoujian.com",
   socketUrl: "api.zhoushoujian.com"
 };
